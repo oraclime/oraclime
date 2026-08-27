@@ -9,11 +9,9 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   font-family:
@@ -28,12 +26,10 @@ body {
   line-height: 1.6;
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 
 button,
 input,
@@ -42,35 +38,29 @@ textarea {
   font: inherit;
 }
 
-
 button {
   cursor: pointer;
 }
-
 
 .container {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
 }
 
-
 .section {
   padding: 110px 0;
 }
-
 
 .section-light {
   padding: 110px 0;
   background: #f4f7f6;
 }
 
-
 .section-dark {
   padding: 110px 0;
   background: #08110f;
   color: #ffffff;
 }
-
 
 
 /* =========================================
@@ -89,7 +79,6 @@ button {
   backdrop-filter: blur(14px);
 }
 
-
 .nav-container {
   width: min(1280px, calc(100% - 40px));
   height: 88px;
@@ -100,7 +89,6 @@ button {
   justify-content: space-between;
 }
 
-
 .brand {
   display: flex;
   align-items: center;
@@ -109,7 +97,6 @@ button {
   font-weight: 800;
   letter-spacing: 0.04em;
 }
-
 
 .brand-mark {
   width: 36px;
@@ -128,12 +115,10 @@ button {
   font-weight: 800;
 }
 
-
 .brand-name {
   font-size: 18px;
   letter-spacing: 0.06em;
 }
-
 
 .nav-links {
   display: flex;
@@ -144,7 +129,6 @@ button {
   margin-right: 40px;
 }
 
-
 .nav-links a {
   color: #526071;
   font-size: 15px;
@@ -153,11 +137,9 @@ button {
   transition: color 0.2s ease;
 }
 
-
 .nav-links a:hover {
   color: #078d69;
 }
-
 
 .nav-button {
   display: inline-flex;
@@ -179,12 +161,10 @@ button {
     background 0.2s ease;
 }
 
-
 .nav-button:hover {
   background: #078d69;
   transform: translateY(-2px);
 }
-
 
 .mobile-menu-button {
   display: none;
@@ -198,7 +178,6 @@ button {
   border-radius: 9px;
 }
 
-
 .mobile-menu-button span {
   display: block;
 
@@ -210,11 +189,9 @@ button {
   background: #111827;
 }
 
-
 .mobile-menu {
   display: none;
 }
-
 
 
 /* =========================================
@@ -241,23 +218,19 @@ button {
     background 0.2s ease;
 }
 
-
 .button:hover {
   transform: translateY(-2px);
 }
-
 
 .button-primary {
   background: #079473;
   color: #ffffff;
 }
 
-
 .button-primary:hover {
   background: #057d62;
   box-shadow: 0 10px 25px rgba(7, 148, 115, 0.18);
 }
-
 
 .button-secondary {
   background: #ffffff;
@@ -266,11 +239,9 @@ button {
   border: 1px solid #d4dcda;
 }
 
-
 .button-secondary:hover {
   border-color: #079473;
 }
-
 
 
 /* =========================================
@@ -287,7 +258,6 @@ button {
 
   letter-spacing: 0.22em;
 }
-
 
 
 /* =========================================
@@ -310,7 +280,6 @@ button {
     #ffffff;
 }
 
-
 .hero-container {
   width: min(1280px, calc(100% - 40px));
   margin: 0 auto;
@@ -323,11 +292,9 @@ button {
   align-items: center;
 }
 
-
 .hero-content {
   padding-left: 20px;
 }
-
 
 .hero-content h1 {
   max-width: 680px;
@@ -345,13 +312,11 @@ button {
   color: #111827;
 }
 
-
 .hero-content h1 span {
   display: block;
 
   color: #079473;
 }
-
 
 .hero-description {
   max-width: 670px;
@@ -365,7 +330,6 @@ button {
   line-height: 1.75;
 }
 
-
 .hero-buttons {
   display: flex;
 
@@ -373,7 +337,6 @@ button {
 
   margin-top: 32px;
 }
-
 
 .service-pills {
   display: flex;
@@ -385,7 +348,6 @@ button {
   margin-top: 28px;
 }
 
-
 .service-pill {
   display: inline-flex;
   align-items: center;
@@ -393,7 +355,7 @@ button {
 
   padding: 9px 14px;
 
-  border: 1px solid #dce4e1;
+  border: 1px solid #111827;
 
   border-radius: 50px;
 
@@ -404,29 +366,27 @@ button {
   font-size: 12px;
 }
 
-
+/* BLACK STROKE ONLY */
 .active-pill {
-  border-color: #e7c000;
-
+  border-color: #111827;
   color: #34404c;
 }
 
-
+/* BLACK STROKE + NORMAL TEXT */
 .coming-pill {
-  border-color: #9ed2c3;
-
-  color: #078d69;
+  border-color: #111827;
+  color: #34404c;
 }
 
-
 .coming-pill small {
+  color: #111827;
+
   font-size: 8px;
 
   font-weight: 800;
 
   letter-spacing: 0.08em;
 }
-
 
 
 /* =========================================
@@ -446,7 +406,6 @@ button {
     0 30px 70px rgba(10, 30, 25, 0.16);
 }
 
-
 .card-status {
   display: flex;
   align-items: center;
@@ -461,7 +420,6 @@ button {
   letter-spacing: 0.15em;
 }
 
-
 .status-dot {
   width: 8px;
   height: 8px;
@@ -470,7 +428,6 @@ button {
 
   border-radius: 50%;
 }
-
 
 .hero-card h2 {
   margin-top: 55px;
@@ -482,18 +439,15 @@ button {
   letter-spacing: -0.035em;
 }
 
-
 .hero-card h2 span {
   display: block;
 
   color: #75dfc1;
 }
 
-
 .process-list {
   margin-top: 45px;
 }
-
 
 .process-item {
   position: relative;
@@ -506,7 +460,6 @@ button {
 
   min-height: 76px;
 }
-
 
 .process-number {
   width: 40px;
@@ -526,7 +479,6 @@ button {
   font-weight: 700;
 }
 
-
 .process-line {
   position: absolute;
 
@@ -539,16 +491,13 @@ button {
   background: #31554d;
 }
 
-
 .process-item:last-child .process-line {
   display: none;
 }
 
-
 .process-content {
   padding-top: 1px;
 }
-
 
 .process-content small {
   display: block;
@@ -561,7 +510,6 @@ button {
   letter-spacing: 0.14em;
 }
 
-
 .process-content strong {
   display: block;
 
@@ -571,7 +519,6 @@ button {
 
   font-size: 15px;
 }
-
 
 
 /* =========================================
@@ -590,7 +537,6 @@ button {
   margin-bottom: 55px;
 }
 
-
 .section-intro h2,
 .business-heading h2,
 .technician-heading h2,
@@ -607,7 +553,6 @@ button {
   color: #111827;
 }
 
-
 .section-intro > p {
   color: #647184;
 
@@ -615,7 +560,6 @@ button {
 
   line-height: 1.8;
 }
-
 
 .services-grid {
   display: grid;
@@ -625,13 +569,12 @@ button {
   gap: 22px;
 }
 
-
 .service-card {
   min-height: 320px;
 
   padding: 30px;
 
-  border: 1px solid #e1e8e5;
+  border: 1px solid #111827;
 
   border-radius: 16px;
 
@@ -646,7 +589,6 @@ button {
     box-shadow 0.25s ease;
 }
 
-
 .service-card:hover {
   transform: translateY(-6px);
 
@@ -654,16 +596,15 @@ button {
     0 18px 45px rgba(17, 24, 39, 0.08);
 }
 
-
+/* AVAILABLE — BLACK STROKE */
 .active-service {
-  border: 3px solid #f0c400;
+  border: 3px solid #111827;
 }
 
-
+/* COMING SOON — BLACK STROKE */
 .coming-soon-card {
-  border: 3px solid #078d69;
+  border: 3px solid #111827;
 }
-
 
 .service-top {
   display: flex;
@@ -672,7 +613,6 @@ button {
 
   align-items: center;
 }
-
 
 .service-number {
   color: #078d69;
@@ -684,7 +624,6 @@ button {
   letter-spacing: 0.08em;
 }
 
-
 .available-label,
 .coming-label {
   font-size: 9px;
@@ -694,16 +633,15 @@ button {
   letter-spacing: 0.13em;
 }
 
-
+/* NO YELLOW */
 .available-label {
-  color: #ad8c00;
+  color: #111827;
 }
 
-
+/* NO GREEN */
 .coming-label {
-  color: #078d69;
+  color: #111827;
 }
-
 
 .service-bottom h3 {
   color: #111827;
@@ -714,7 +652,6 @@ button {
 
   letter-spacing: -0.03em;
 }
-
 
 .service-bottom p {
   max-width: 350px;
@@ -727,7 +664,6 @@ button {
 
   line-height: 1.7;
 }
-
 
 
 /* =========================================
@@ -744,11 +680,9 @@ button {
   align-items: start;
 }
 
-
 .business-heading h2 {
   max-width: 560px;
 }
-
 
 .business-heading p {
   max-width: 520px;
@@ -762,11 +696,9 @@ button {
   line-height: 1.8;
 }
 
-
 .business-points {
   border-top: 1px solid #dce4e1;
 }
-
 
 .business-point {
   display: grid;
@@ -780,7 +712,6 @@ button {
   border-bottom: 1px solid #dce4e1;
 }
 
-
 .business-point > span {
   color: #078d69;
 
@@ -789,13 +720,11 @@ button {
   font-weight: 800;
 }
 
-
 .business-point h3 {
   color: #111827;
 
   font-size: 20px;
 }
-
 
 .business-point p {
   margin-top: 7px;
@@ -806,7 +735,6 @@ button {
 
   line-height: 1.7;
 }
-
 
 
 /* =========================================
@@ -821,16 +749,13 @@ button {
   gap: 100px;
 }
 
-
 .technician-heading h2 {
   max-width: 650px;
 }
 
-
 .technician-copy {
   padding-top: 15px;
 }
-
 
 .technician-copy p {
   margin-bottom: 20px;
@@ -841,7 +766,6 @@ button {
 
   line-height: 1.8;
 }
-
 
 .text-link {
   display: inline-flex;
@@ -859,16 +783,13 @@ button {
   font-size: 14px;
 }
 
-
 .text-link span {
   transition: transform 0.2s ease;
 }
 
-
 .text-link:hover span {
   transform: translateX(5px);
 }
-
 
 
 /* =========================================
@@ -879,13 +800,11 @@ button {
   color: #72d8bd;
 }
 
-
 .how-heading h2 {
   color: #ffffff;
 
   max-width: 600px;
 }
-
 
 .how-grid {
   display: grid;
@@ -899,7 +818,6 @@ button {
   background: #2a3a36;
 }
 
-
 .how-card {
   min-height: 250px;
 
@@ -907,7 +825,6 @@ button {
 
   background: #091311;
 }
-
 
 .how-card > span {
   color: #6ed8bb;
@@ -917,7 +834,6 @@ button {
   font-weight: 800;
 }
 
-
 .how-card h3 {
   margin-top: 60px;
 
@@ -925,7 +841,6 @@ button {
 
   font-size: 21px;
 }
-
 
 .how-card p {
   margin-top: 10px;
@@ -936,7 +851,6 @@ button {
 
   line-height: 1.7;
 }
-
 
 
 /* =========================================
@@ -957,11 +871,9 @@ button {
   border-radius: 20px;
 }
 
-
 .request-content h2 {
   font-size: clamp(42px, 5vw, 60px);
 }
-
 
 .request-content p {
   max-width: 400px;
@@ -973,14 +885,12 @@ button {
   line-height: 1.8;
 }
 
-
 .request-form {
   display: flex;
   flex-direction: column;
 
   gap: 17px;
 }
-
 
 .form-row {
   display: grid;
@@ -990,14 +900,12 @@ button {
   gap: 15px;
 }
 
-
 .form-group {
   display: flex;
   flex-direction: column;
 
   gap: 7px;
 }
-
 
 .form-group label {
   color: #374151;
@@ -1006,7 +914,6 @@ button {
 
   font-weight: 700;
 }
-
 
 .form-group input,
 .form-group select,
@@ -1032,11 +939,9 @@ button {
     box-shadow 0.2s ease;
 }
 
-
 .form-group textarea {
   resize: vertical;
 }
-
 
 .form-group input:focus,
 .form-group select:focus,
@@ -1047,13 +952,11 @@ button {
     0 0 0 3px rgba(7, 141, 105, 0.09);
 }
 
-
 .form-button {
   border: none;
 
   margin-top: 5px;
 }
-
 
 .form-message {
   min-height: 20px;
@@ -1066,7 +969,6 @@ button {
 }
 
 
-
 /* =========================================
    FOOTER
 ========================================= */
@@ -1076,7 +978,6 @@ button {
 
   color: #ffffff;
 }
-
 
 .footer-container {
   display: flex;
@@ -1088,12 +989,10 @@ button {
   padding: 75px 0;
 }
 
-
 .footer-logo .brand-mark {
   background: #ffffff;
   color: #07100e;
 }
-
 
 .footer-brand p {
   max-width: 330px;
@@ -1107,13 +1006,11 @@ button {
   line-height: 1.7;
 }
 
-
 .footer-links {
   display: flex;
 
   gap: 100px;
 }
-
 
 .footer-links h4 {
   margin-bottom: 18px;
@@ -1124,7 +1021,6 @@ button {
 
   letter-spacing: 0.05em;
 }
-
 
 .footer-links a {
   display: block;
@@ -1138,16 +1034,13 @@ button {
   transition: color 0.2s ease;
 }
 
-
 .footer-links a:hover {
   color: #6ed8bb;
 }
 
-
 .footer-bottom {
   border-top: 1px solid #20312d;
 }
-
 
 .footer-bottom .container {
   min-height: 65px;
@@ -1161,13 +1054,11 @@ button {
   gap: 20px;
 }
 
-
 .footer-bottom p {
   color: #70827d;
 
   font-size: 11px;
 }
-
 
 
 /* =========================================
@@ -1181,21 +1072,17 @@ button {
     margin-right: 20px;
   }
 
-
   .hero-container {
     gap: 45px;
   }
-
 
   .hero-content h1 {
     font-size: 62px;
   }
 
-
   .section-intro {
     gap: 40px;
   }
-
 
   .business-container,
   .technician-layout {
@@ -1212,11 +1099,9 @@ button {
     display: none;
   }
 
-
   .mobile-menu-button {
     display: block;
   }
-
 
   .mobile-menu {
     display: none;
@@ -1228,11 +1113,9 @@ button {
     background: #ffffff;
   }
 
-
   .mobile-menu.active {
     display: block;
   }
-
 
   .mobile-menu a {
     display: block;
@@ -1247,7 +1130,6 @@ button {
 
     font-weight: 600;
   }
-
 
   .mobile-menu .mobile-request {
     margin-top: 12px;
@@ -1265,11 +1147,9 @@ button {
     text-align: center;
   }
 
-
   .hero {
     padding-top: 70px;
   }
-
 
   .hero-container,
   .business-container,
@@ -1278,42 +1158,34 @@ button {
     grid-template-columns: 1fr;
   }
 
-
   .hero-content {
     padding-left: 0;
   }
-
 
   .hero-content h1 {
     font-size: 58px;
   }
 
-
   .hero-card {
     min-height: auto;
   }
-
 
   .section-intro {
     grid-template-columns: 1fr;
   }
 
-
   .services-grid {
     grid-template-columns: 1fr 1fr;
   }
-
 
   .how-grid {
     grid-template-columns: 1fr 1fr;
   }
 
-
   .business-container,
   .technician-layout {
     gap: 50px;
   }
-
 
   .request-box {
     padding: 35px;
@@ -1330,28 +1202,23 @@ button {
     width: min(100% - 28px, 1180px);
   }
 
-
   .section,
   .section-light,
   .section-dark {
     padding: 75px 0;
   }
 
-
   .nav-container {
     height: 75px;
   }
-
 
   .brand-name {
     font-size: 16px;
   }
 
-
   .hero {
     padding: 55px 0 60px;
   }
-
 
   .hero-content h1 {
     font-size: 47px;
@@ -1359,33 +1226,29 @@ button {
     line-height: 1.02;
   }
 
-
   .hero-description {
     font-size: 16px;
 
     margin-top: 25px;
   }
 
-
   .hero-buttons {
     flex-direction: column;
   }
-
 
   .button {
     width: 100%;
   }
 
-
   .service-pills {
     gap: 7px;
   }
 
-
   .service-pill {
     font-size: 11px;
-  }
 
+    border-color: #111827;
+  }
 
   .hero-card {
     padding: 28px;
@@ -1393,13 +1256,11 @@ button {
     border-radius: 16px;
   }
 
-
   .hero-card h2 {
     margin-top: 40px;
 
     font-size: 29px;
   }
-
 
   .section-intro h2,
   .business-heading h2,
@@ -1409,41 +1270,35 @@ button {
     font-size: 42px;
   }
 
-
   .services-grid {
     grid-template-columns: 1fr;
   }
 
-
   .service-card {
     min-height: 280px;
-  }
 
+    border-color: #111827;
+  }
 
   .how-grid {
     grid-template-columns: 1fr;
   }
 
-
   .how-card {
     min-height: 200px;
   }
-
 
   .how-card h3 {
     margin-top: 40px;
   }
 
-
   .form-row {
     grid-template-columns: 1fr;
   }
 
-
   .request-box {
     padding: 25px 20px;
   }
-
 
   .footer-container {
     flex-direction: column;
@@ -1451,11 +1306,9 @@ button {
     padding: 55px 0;
   }
 
-
   .footer-links {
     gap: 60px;
   }
-
 
   .footer-bottom .container {
     min-height: auto;
@@ -1470,19 +1323,45 @@ button {
 
 }
 
-/* Service card borders - BLACK ONLY */
-.service-card {
-  border-color: #111827 !important;
-}
 
-.service-card.available,
-.service-card.coming-soon {
-  border-color: #111827 !important;
-}
-/* Service category pills - black stroke only */
+/* =========================================
+   FINAL SERVICE COLOUR OVERRIDE
+   BLACK STROKE ONLY
+========================================= */
+
 .service-pill,
 .service-tag,
 .service-chip,
 .service-category {
   border-color: #111827 !important;
-} 
+}
+
+.service-pill,
+.service-tag,
+.service-chip,
+.service-category {
+  background: #ffffff !important;
+}
+
+.active-pill,
+.coming-pill {
+  border-color: #111827 !important;
+}
+
+.coming-pill {
+  color: #34404c !important;
+}
+
+.coming-pill small {
+  color: #111827 !important;
+}
+
+.active-service,
+.coming-soon-card {
+  border-color: #111827 !important;
+}
+
+.available-label,
+.coming-label {
+  color: #111827 !important;
+}
