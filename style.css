@@ -1479,3 +1479,10 @@ button {
 .service-card.coming-soon {
   border-color: #111827 !important;
 }
+/* Service category pills - black stroke only */
+.service-pill,
+.service-tag,
+.service-chip,
+.service-category {
+  border-color: #111827 !important;
+} 
