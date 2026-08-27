@@ -1469,3 +1469,13 @@ button {
   }
 
 }
+
+/* Service card borders - BLACK ONLY */
+.service-card {
+  border-color: #111827 !important;
+}
+
+.service-card.available,
+.service-card.coming-soon {
+  border-color: #111827 !important;
+}
