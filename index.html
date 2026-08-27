@@ -2,39 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ORACLIME | Technical Services, Coordinated</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <meta
     name="description"
-    content="ORACLIME connects businesses and customers with reliable technicians for HVAC, AC, CCTV, electrical and technical services."
+    content="ORACLIME connects customers and businesses with reliable air conditioner service professionals."
   >
+
+  <title>ORACLIME | Air Conditioner Technical Services</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ================= HEADER ================= -->
+  <!-- ================================
+       NAVIGATION
+  ================================= -->
 
-  <header class="header">
+  <header class="navbar" id="navbar">
 
-    <div class="container nav">
+    <div class="nav-container">
 
-      <a href="#home" class="logo">
-        <span class="logo-mark">O</span>
-        <span>ORACLIME</span>
+      <a href="#home" class="brand">
+
+        <span class="brand-mark">O</span>
+
+        <span class="brand-name">
+          ORACLIME
+        </span>
+
       </a>
 
-      <nav class="navigation">
+
+      <nav class="nav-links">
+
         <a href="#services">Services</a>
+
         <a href="#business">For Business</a>
+
         <a href="#technicians">Technicians</a>
-        <a href="#process">How It Works</a>
+
+        <a href="#how-it-works">How It Works</a>
+
       </nav>
 
-      <a href="#contact" class="nav-button">
+
+      <a
+        href="#request"
+        class="nav-button"
+      >
+        Request Service
+      </a>
+
+
+      <button
+        class="mobile-menu-button"
+        id="mobileMenuButton"
+        aria-label="Open menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+    >
+
+      <a href="#services">Services</a>
+
+      <a href="#business">For Business</a>
+
+      <a href="#technicians">Technicians</a>
+
+      <a href="#how-it-works">How It Works</a>
+
+      <a
+        href="#request"
+        class="mobile-request"
+      >
         Request Service
       </a>
 
@@ -43,13 +98,19 @@
   </header>
 
 
-  <!-- ================= HERO ================= -->
 
   <main>
 
-    <section id="home" class="hero">
+    <!-- ================================
+         HERO
+    ================================= -->
 
-      <div class="container hero-grid">
+    <section
+      class="hero"
+      id="home"
+    >
+
+      <div class="hero-container">
 
         <div class="hero-content">
 
@@ -57,93 +118,148 @@
             TECHNICAL SERVICE NETWORK
           </div>
 
+
           <h1>
             Technical work.
             <span>Properly coordinated.</span>
           </h1>
 
+
           <p class="hero-description">
-            ORACLIME connects businesses, customers and service
-            professionals for HVAC, AC, CCTV, electrical and
-            related technical services.
+            ORACLIME connects businesses, customers and
+            service professionals for reliable air
+            conditioner and technical service support.
           </p>
+
 
           <div class="hero-buttons">
 
-            <a href="#contact" class="button button-primary">
+            <a
+              href="#request"
+              class="button button-primary"
+            >
               Get Service Support
             </a>
 
-            <a href="#business" class="button button-secondary">
+
+            <a
+              href="#business"
+              class="button button-secondary"
+            >
               Partner With Us
             </a>
 
           </div>
 
-          <div class="service-tags">
 
-            <span>HVAC & AC</span>
-            <span>CCTV</span>
-            <span>Electrical</span>
-            <span>Technical Services</span>
+          <!-- SERVICE PILLS -->
+
+          <div class="service-pills">
+
+            <span class="service-pill active-pill">
+              Air Conditioner
+            </span>
+
+            <span class="service-pill">
+              Technical Services
+            </span>
+
+            <span class="service-pill coming-pill">
+              Electrical
+              <small>Coming Soon</small>
+            </span>
 
           </div>
 
         </div>
 
 
-        <!-- SERVICE FLOW CARD -->
 
-        <div class="service-card">
+        <!-- HERO PROCESS CARD -->
 
-          <div class="service-status">
+        <div class="hero-card">
+
+          <div class="card-status">
+
             <span class="status-dot"></span>
+
             SERVICE NETWORK ACTIVE
+
           </div>
+
 
           <h2>
             One request.
-            <strong>Right technician.</strong>
+            <span>Right technician.</span>
           </h2>
 
 
-          <div class="service-step">
+          <div class="process-list">
 
-            <div class="step-number">01</div>
+            <div class="process-item">
 
-            <div>
-              <small>BUSINESS / CUSTOMER</small>
-              <strong>Service requirement</strong>
+              <div class="process-number">
+                01
+              </div>
+
+              <div class="process-line"></div>
+
+              <div class="process-content">
+
+                <small>
+                  BUSINESS / CUSTOMER
+                </small>
+
+                <strong>
+                  Service requirement
+                </strong>
+
+              </div>
+
             </div>
 
-          </div>
 
+            <div class="process-item">
 
-          <div class="step-line"></div>
+              <div class="process-number">
+                02
+              </div>
 
+              <div class="process-line"></div>
 
-          <div class="service-step">
+              <div class="process-content">
 
-            <div class="step-number">02</div>
+                <small>
+                  ORACLIME
+                </small>
 
-            <div>
-              <small>ORACLIME</small>
-              <strong>Coordinate & assign</strong>
+                <strong>
+                  Coordinate & assign
+                </strong>
+
+              </div>
+
             </div>
 
-          </div>
 
+            <div class="process-item">
 
-          <div class="step-line"></div>
+              <div class="process-number">
+                03
+              </div>
 
+              <div class="process-content">
 
-          <div class="service-step">
+                <small>
+                  TECHNICIAN
+                </small>
 
-            <div class="step-number">03</div>
+                <strong>
+                  Professional service delivery
+                </strong>
 
-            <div>
-              <small>TECHNICIAN</small>
-              <strong>Professional service delivery</strong>
+              </div>
+
             </div>
 
           </div>
@@ -155,80 +271,148 @@
     </section>
 
 
-    <!-- ================= SERVICES ================= -->
 
-    <section id="services" class="section">
+    <!-- ================================
+         SERVICES
+    ================================= -->
+
+    <section
+      class="services-section section"
+      id="services"
+    >
 
       <div class="container">
 
-        <div class="section-heading">
+        <div class="section-intro">
 
-          <div class="eyebrow">
-            WHAT WE COORDINATE
+          <div>
+
+            <span class="eyebrow">
+              OUR SERVICES
+            </span>
+
+            <h2>
+              Technical services
+              you can rely on.
+            </h2>
+
           </div>
 
-          <h2>
-            Technical services businesses can rely on.
-          </h2>
+
+          <p>
+            ORACLIME is currently focused on
+            dependable air conditioner service.
+            Additional technical categories will
+            be introduced as the network expands.
+          </p>
 
         </div>
+
 
 
         <div class="services-grid">
 
 
-          <article class="service-box">
+          <!-- AIR CONDITIONER -->
 
-            <div class="service-number">01</div>
+          <article class="service-card active-service">
 
-            <h3>HVAC & AC</h3>
+            <div class="service-top">
 
-            <p>
-              Installation, servicing, repair and maintenance
-              support for air-conditioning and HVAC requirements.
-            </p>
+              <span class="service-number">
+                01
+              </span>
 
-          </article>
+              <span class="available-label">
+                AVAILABLE
+              </span>
 
-
-          <article class="service-box">
-
-            <div class="service-number">02</div>
-
-            <h3>CCTV & Security</h3>
-
-            <p>
-              Camera installation, troubleshooting, maintenance
-              and technical support for security systems.
-            </p>
-
-          </article>
+            </div>
 
 
-          <article class="service-box">
+            <div class="service-bottom">
 
-            <div class="service-number">03</div>
+              <h3>
+                Air Conditioner
+              </h3>
 
-            <h3>Electrical</h3>
+              <p>
+                Installation, servicing, repair
+                and maintenance support for
+                air-conditioning requirements.
+              </p>
 
-            <p>
-              Electrical service coordination for installations,
-              repairs, maintenance and site requirements.
-            </p>
+            </div>
 
           </article>
 
 
-          <article class="service-box">
 
-            <div class="service-number">04</div>
+          <!-- ELECTRICAL -->
 
-            <h3>Technical Services</h3>
+          <article class="service-card coming-soon-card">
 
-            <p>
-              A scalable service network designed to support
-              additional technical categories as we grow.
-            </p>
+            <div class="service-top">
+
+              <span class="service-number">
+                02
+              </span>
+
+              <span class="coming-label">
+                COMING SOON
+              </span>
+
+            </div>
+
+
+            <div class="service-bottom">
+
+              <h3>
+                Electrical
+              </h3>
+
+              <p>
+                Professional electrical service
+                coordination for installations,
+                repairs and maintenance.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- TECHNICAL SERVICES -->
+
+          <article class="service-card coming-soon-card">
+
+            <div class="service-top">
+
+              <span class="service-number">
+                03
+              </span>
+
+              <span class="coming-label">
+                COMING SOON
+              </span>
+
+            </div>
+
+
+            <div class="service-bottom">
+
+              <h3>
+                Technical Services
+              </h3>
+
+              <p>
+                Additional technical service
+                categories will be introduced
+                as ORACLIME expands.
+              </p>
+
+            </div>
 
           </article>
 
@@ -240,95 +424,135 @@
     </section>
 
 
-    <!-- ================= BUSINESS ================= -->
 
-    <section id="business" class="business-section">
+    <!-- ================================
+         FOR BUSINESS
+    ================================= -->
 
-      <div class="container business-grid">
+    <section
+      class="business-section section-light"
+      id="business"
+    >
 
+      <div class="container business-container">
 
-        <div class="business-content">
+        <div class="business-heading">
 
-          <div class="eyebrow">
+          <span class="eyebrow">
             FOR BUSINESSES
-          </div>
+          </span>
 
           <h2>
-            Your technical service requirement,
-            managed end to end.
+            A reliable service
+            network for your
+            requirements.
           </h2>
 
           <p>
-            ORACLIME helps companies, contractors, dealers and
-            organizations convert service requirements into
-            reliable field execution.
+            ORACLIME helps businesses coordinate
+            service requirements with suitable
+            technicians and professional service
+            execution.
           </p>
 
-          <a href="#contact" class="text-link">
-            Discuss a partnership →
+          <a
+            href="#request"
+            class="button button-primary"
+          >
+            Discuss Your Requirement
           </a>
 
         </div>
 
 
-        <div class="feature-list">
+        <div class="business-points">
 
+          <div class="business-point">
 
-          <div class="feature">
-
-            <div class="feature-number">01</div>
+            <span>
+              01
+            </span>
 
             <div>
-              <h3>Lead Intake</h3>
+
+              <h3>
+                Lead Intake
+              </h3>
+
               <p>
-                We receive and structure the service requirement.
+                Receive and understand the
+                service requirement clearly.
               </p>
+
             </div>
 
           </div>
 
 
-          <div class="feature">
+          <div class="business-point">
 
-            <div class="feature-number">02</div>
+            <span>
+              02
+            </span>
 
             <div>
-              <h3>Technician Assignment</h3>
+
+              <h3>
+                Technician Coordination
+              </h3>
+
               <p>
-                We coordinate the right available service professional.
+                Coordinate the requirement with
+                an appropriate service professional.
               </p>
+
             </div>
 
           </div>
 
 
-          <div class="feature">
+          <div class="business-point">
 
-            <div class="feature-number">03</div>
+            <span>
+              03
+            </span>
 
             <div>
-              <h3>Customer Communication</h3>
+
+              <h3>
+                Service Execution
+              </h3>
+
               <p>
-                We keep the service journey organized and professional.
+                Keep communication and service
+                coordination organized through the job.
               </p>
+
             </div>
 
           </div>
 
 
-          <div class="feature">
+          <div class="business-point">
 
-            <div class="feature-number">04</div>
+            <span>
+              04
+            </span>
 
             <div>
-              <h3>Execution & Follow-up</h3>
+
+              <h3>
+                Customer Support
+              </h3>
+
               <p>
-                We support service completion and closure.
+                Maintain professional communication
+                throughout the service process.
               </p>
+
             </div>
 
           </div>
-
 
         </div>
 
@@ -337,110 +561,59 @@
     </section>
 
 
-    <!-- ================= TECHNICIANS ================= -->
 
-    <section id="technicians" class="technician-section">
+    <!-- ================================
+         TECHNICIANS
+    ================================= -->
 
-      <div class="container technician-content">
-
-        <div class="eyebrow">
-          FOR TECHNICIANS
-        </div>
-
-        <h2>
-          More opportunities.
-          <span>Less chasing.</span>
-        </h2>
-
-        <p>
-          Join the ORACLIME service network and get connected
-          to relevant technical work while we coordinate the
-          business and customer side.
-        </p>
-
-        <a href="#contact" class="button button-light">
-          Join the Network
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= PROCESS ================= -->
-
-    <section id="process" class="section process-section">
+    <section
+      class="technicians-section section"
+      id="technicians"
+    >
 
       <div class="container">
 
-        <div class="section-heading">
+        <div class="technician-layout">
 
-          <div class="eyebrow">
-            HOW IT WORKS
+          <div class="technician-heading">
+
+            <span class="eyebrow">
+              FOR TECHNICIANS
+            </span>
+
+            <h2>
+              Work opportunities.
+              Professional coordination.
+            </h2>
+
           </div>
 
-          <h2>
-            A simple service workflow.
-          </h2>
 
-        </div>
-
-
-        <div class="process-grid">
-
-
-          <div class="process-box">
-
-            <span>01</span>
-
-            <h3>Requirement</h3>
+          <div class="technician-copy">
 
             <p>
-              Business or customer shares the service need.
+              ORACLIME works with service
+              professionals to coordinate
+              technical requirements and
+              customer service delivery.
             </p>
-
-          </div>
-
-
-          <div class="process-box">
-
-            <span>02</span>
-
-            <h3>Coordination</h3>
 
             <p>
-              ORACLIME verifies the requirement and coordinates
-              assignment.
+              If you are an experienced AC
+              technician and want to work with
+              service requirements, get in touch
+              with our team.
             </p>
 
-          </div>
-
-
-          <div class="process-box">
-
-            <span>03</span>
-
-            <h3>Execution</h3>
-
-            <p>
-              The assigned technician delivers the service on site.
-            </p>
+            <a
+              href="#request"
+              class="text-link"
+            >
+              Join the service network
+              <span>→</span>
+            </a>
 
           </div>
-
-
-          <div class="process-box">
-
-            <span>04</span>
-
-            <h3>Closure</h3>
-
-            <p>
-              Service status, communication and follow-up are completed.
-            </p>
-
-          </div>
-
 
         </div>
 
@@ -449,92 +622,252 @@
     </section>
 
 
-    <!-- ================= CONTACT ================= -->
 
-    <section id="contact" class="contact-section">
+    <!-- ================================
+         HOW IT WORKS
+    ================================= -->
 
-      <div class="container contact-grid">
+    <section
+      class="how-section section-dark"
+      id="how-it-works"
+    >
 
+      <div class="container">
 
-        <div class="contact-content">
+        <div class="how-heading">
 
-          <div class="eyebrow">
-            LET'S CONNECT
-          </div>
+          <span class="eyebrow eyebrow-light">
+            HOW IT WORKS
+          </span>
 
           <h2>
-            Need technical
-            service support?
+            Simple process.
+            Clear coordination.
           </h2>
-
-          <p>
-            Tell us what you need.
-            ORACLIME will coordinate the next step.
-          </p>
 
         </div>
 
 
-        <form class="contact-form" onsubmit="sendRequest(event)">
+        <div class="how-grid">
 
-          <input
-            type="text"
-            id="name"
-            placeholder="Your name / company"
-            required
+          <div class="how-card">
+
+            <span>
+              01
+            </span>
+
+            <h3>
+              Requirement
+            </h3>
+
+            <p>
+              Customer or business shares
+              the service requirement.
+            </p>
+
+          </div>
+
+
+          <div class="how-card">
+
+            <span>
+              02
+            </span>
+
+            <h3>
+              Coordination
+            </h3>
+
+            <p>
+              ORACLIME reviews and coordinates
+              the requirement with a technician.
+            </p>
+
+          </div>
+
+
+          <div class="how-card">
+
+            <span>
+              03
+            </span>
+
+            <h3>
+              Service
+            </h3>
+
+            <p>
+              Technician carries out the
+              required professional service.
+            </p>
+
+          </div>
+
+
+          <div class="how-card">
+
+            <span>
+              04
+            </span>
+
+            <h3>
+              Support
+            </h3>
+
+            <p>
+              ORACLIME keeps the communication
+              and service process coordinated.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================================
+         REQUEST SERVICE
+    ================================= -->
+
+    <section
+      class="request-section section"
+      id="request"
+    >
+
+      <div class="container">
+
+        <div class="request-box">
+
+          <div class="request-content">
+
+            <span class="eyebrow">
+              SERVICE REQUEST
+            </span>
+
+            <h2>
+              Need AC service?
+            </h2>
+
+            <p>
+              Tell us what you need and our
+              team can coordinate the next step.
+            </p>
+
+          </div>
+
+
+          <form
+            class="request-form"
+            id="serviceForm"
           >
 
-          <input
-            type="tel"
-            id="phone"
-            placeholder="Phone / WhatsApp number"
-            required
-          >
+            <div class="form-row">
 
-          <select id="service">
+              <div class="form-group">
 
-            <option value="HVAC / AC">
-              HVAC / AC
-            </option>
+                <label for="name">
+                  Name
+                </label>
 
-            <option value="CCTV">
-              CCTV
-            </option>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                >
 
-            <option value="Electrical">
-              Electrical
-            </option>
-
-            <option value="Other Technical Service">
-              Other Technical Service
-            </option>
-
-            <option value="Business Partnership">
-              Business Partnership
-            </option>
-
-            <option value="Technician Onboarding">
-              Technician Onboarding
-            </option>
-
-          </select>
+              </div>
 
 
-          <textarea
-            id="message"
-            rows="5"
-            placeholder="Briefly describe your requirement"
-          ></textarea>
+              <div class="form-group">
+
+                <label for="phone">
+                  Phone
+                </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Your phone number"
+                  required
+                >
+
+              </div>
+
+            </div>
 
 
-          <button
-            type="submit"
-            class="button button-primary"
-          >
-            Send Request
-          </button>
+            <div class="form-group">
 
-        </form>
+              <label for="service">
+                Service
+              </label>
+
+              <select
+                id="service"
+                name="service"
+                required
+              >
+
+                <option value="">
+                  Select a service
+                </option>
+
+                <option value="Air Conditioner">
+                  Air Conditioner
+                </option>
+
+                <option value="Technician Network">
+                  Technician Network
+                </option>
+
+                <option value="Business Partnership">
+                  Business Partnership
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="message">
+                Requirement
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell us briefly what you need..."
+              ></textarea>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="button button-primary form-button"
+            >
+              Submit Request
+            </button>
+
+
+            <p
+              class="form-message"
+              id="formMessage"
+            ></p>
+
+          </form>
+
+        </div>
 
       </div>
 
@@ -543,28 +876,103 @@
   </main>
 
 
-  <!-- ================= FOOTER ================= -->
+
+  <!-- ================================
+       FOOTER
+  ================================= -->
 
   <footer class="footer">
 
-    <div class="container footer-content">
+    <div class="container footer-container">
 
-      <a href="#home" class="logo">
-        <span class="logo-mark">O</span>
-        <span>ORACLIME</span>
-      </a>
+      <div class="footer-brand">
 
-      <p>
-        Technical services, coordinated.
-      </p>
+        <a
+          href="#home"
+          class="brand footer-logo"
+        >
 
-      <small>
-        © 2026 ORACLIME. All rights reserved.
-      </small>
+          <span class="brand-mark">
+            O
+          </span>
+
+          <span class="brand-name">
+            ORACLIME
+          </span>
+
+        </a>
+
+        <p>
+          Technical service coordination
+          built around reliable execution.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <div>
+
+          <h4>
+            Company
+          </h4>
+
+          <a href="#services">
+            Services
+          </a>
+
+          <a href="#business">
+            For Business
+          </a>
+
+          <a href="#technicians">
+            Technicians
+          </a>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Support
+          </h4>
+
+          <a href="#how-it-works">
+            How It Works
+          </a>
+
+          <a href="#request">
+            Request Service
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <p>
+          © <span id="currentYear"></span>
+          ORACLIME. All rights reserved.
+        </p>
+
+        <p>
+          Air Conditioner Service Network
+        </p>
+
+      </div>
 
     </div>
 
   </footer>
+
 
 
   <script src="script.js"></script>
