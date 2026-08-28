@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -7,7 +8,7 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Partner with ORACLIME for reliable air conditioner and technical service coordination.">
+          content="Partner with ORACLIME for reliable technical service coordination.">
 
     <title>Partner With Us | ORACLIME</title>
 
@@ -21,444 +22,631 @@
 
 <body>
 
-    <!-- NAVIGATION -->
-    <header class="navbar">
-        <div class="nav-container">
+<header class="navbar">
 
-            <a href="index.html" class="brand">
-                <span class="brand-mark">O</span>
-                <span>ORACLIME</span>
-            </a>
+    <div class="nav-container">
 
-            <nav class="nav-links">
-                <a href="index.html">Services</a>
-                <a href="index.html">For Business</a>
-                <a href="index.html">Technicians</a>
-                <a href="index.html">How It Works</a>
-            </nav>
+        <a href="index.html" class="brand">
+            <span class="brand-mark">O</span>
+            <span>ORACLIME</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">Services</a>
+
+            <a href="index.html">For Business</a>
+
+            <a href="index.html">Technicians</a>
+
+            <a href="index.html">How It Works</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="partner-page">
+
+    <section class="partner-hero">
+
+        <div class="partner-heading">
+
+            <span class="section-label">
+                PARTNER WITH ORACLIME
+            </span>
+
+            <h1>
+                Let's work<br>
+                <span>together.</span>
+            </h1>
+
+            <p>
+                Tell us about yourself and how you would
+                like to work with ORACLIME.
+            </p>
 
         </div>
-    </header>
 
 
-    <!-- PARTNER PAGE -->
-    <main class="partner-page">
+        <div class="partner-form-card">
 
-        <section class="partner-hero">
+            <form id="partnerForm">
 
-            <div class="partner-heading">
+                <!-- BUSINESS NAME -->
 
-                <span class="section-label">
-                    PARTNER WITH ORACLIME
-                </span>
+                <div class="form-group">
 
-                <h1>
-                    Let's work<br>
-                    <span>together.</span>
-                </h1>
+                    <label for="businessName">
+                        Business / Company Name
+                    </label>
 
-                <p>
-                    Tell us about yourself and how you would
-                    like to work with ORACLIME.
-                </p>
+                    <input
+                        type="text"
+                        id="businessName"
+                        name="businessName"
+                        placeholder="Enter business / company name"
+                        autocomplete="organization"
+                        required>
 
-            </div>
+                </div>
 
 
-            <!-- PARTNER FORM -->
-            <div class="partner-form-card">
+                <!-- CONTACT PERSON -->
 
-                <form id="partnerForm">
+                <div class="form-group">
 
-                    <!-- BUSINESS / COMPANY NAME -->
+                    <label for="contactName">
+                        Contact Person
+                    </label>
+
+                    <input
+                        type="text"
+                        id="contactName"
+                        name="contactName"
+                        placeholder="Enter contact person name"
+                        autocomplete="name"
+                        required>
+
+                </div>
+
+
+                <!-- PHONE + EMAIL -->
+
+                <div class="form-row">
+
                     <div class="form-group">
 
-                        <label for="businessName">
-                            Business / Company Name
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter 10-digit mobile number"
+                            inputmode="numeric"
+                            autocomplete="tel"
+                            maxlength="10"
+                            pattern="[0-9]{10}"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10)"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter email address"
+                            autocomplete="email">
+
+                    </div>
+
+                </div>
+
+
+                <!-- PARTNER TYPE -->
+
+                <div class="form-group">
+
+                    <label for="partnerType">
+                        What best describes you?
+                    </label>
+
+                    <select
+                        id="partnerType"
+                        name="partnerType"
+                        required>
+
+                        <option value="" selected disabled>
+                            Select your category
+                        </option>
+
+                        <option value="Technician">
+                            Technician
+                        </option>
+
+                        <option value="AC / HVAC Shop">
+                            AC / HVAC Shop
+                        </option>
+
+                        <option value="AC / HVAC Warehouse / Distributor">
+                            AC / HVAC Warehouse / Distributor
+                        </option>
+
+                        <option value="Authorised Service Centre">
+                            Authorised Service Centre
+                        </option>
+
+                        <option value="Dealer">
+                            Dealer
+                        </option>
+
+                        <option value="Contractor">
+                            Contractor
+                        </option>
+
+                        <option value="Facility Management Company">
+                            Facility Management Company
+                        </option>
+
+                        <option value="Other Business Partner">
+                            Other Business Partner
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- STATE -->
+
+                <div class="form-group">
+
+                    <label for="state">
+                        State / Union Territory
+                    </label>
+
+                    <select
+                        id="state"
+                        name="state"
+                        required>
+
+                        <option value="" selected disabled>
+                            Select State / Union Territory
+                        </option>
+
+                        <option value="Andaman and Nicobar Islands">
+                            Andaman and Nicobar Islands
+                        </option>
+
+                        <option value="Chandigarh">
+                            Chandigarh
+                        </option>
+
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">
+                            Dadra and Nagar Haveli and Daman and Diu
+                        </option>
+
+                        <option value="Delhi">
+                            Delhi
+                        </option>
+
+                        <option value="Jammu and Kashmir">
+                            Jammu and Kashmir
+                        </option>
+
+                        <option value="Ladakh">
+                            Ladakh
+                        </option>
+
+                        <option value="Lakshadweep">
+                            Lakshadweep
+                        </option>
+
+                        <option value="Puducherry">
+                            Puducherry
+                        </option>
+
+                        <option value="Andhra Pradesh">
+                            Andhra Pradesh
+                        </option>
+
+                        <option value="Arunachal Pradesh">
+                            Arunachal Pradesh
+                        </option>
+
+                        <option value="Assam">
+                            Assam
+                        </option>
+
+                        <option value="Bihar">
+                            Bihar
+                        </option>
+
+                        <option value="Chhattisgarh">
+                            Chhattisgarh
+                        </option>
+
+                        <option value="Goa">
+                            Goa
+                        </option>
+
+                        <option value="Gujarat">
+                            Gujarat
+                        </option>
+
+                        <option value="Haryana">
+                            Haryana
+                        </option>
+
+                        <option value="Himachal Pradesh">
+                            Himachal Pradesh
+                        </option>
+
+                        <option value="Jharkhand">
+                            Jharkhand
+                        </option>
+
+                        <option value="Karnataka">
+                            Karnataka
+                        </option>
+
+                        <option value="Kerala">
+                            Kerala
+                        </option>
+
+                        <option value="Madhya Pradesh">
+                            Madhya Pradesh
+                        </option>
+
+                        <option value="Maharashtra">
+                            Maharashtra
+                        </option>
+
+                        <option value="Manipur">
+                            Manipur
+                        </option>
+
+                        <option value="Meghalaya">
+                            Meghalaya
+                        </option>
+
+                        <option value="Mizoram">
+                            Mizoram
+                        </option>
+
+                        <option value="Nagaland">
+                            Nagaland
+                        </option>
+
+                        <option value="Odisha">
+                            Odisha
+                        </option>
+
+                        <option value="Punjab">
+                            Punjab
+                        </option>
+
+                        <option value="Rajasthan">
+                            Rajasthan
+                        </option>
+
+                        <option value="Sikkim">
+                            Sikkim
+                        </option>
+
+                        <option value="Tamil Nadu">
+                            Tamil Nadu
+                        </option>
+
+                        <option value="Telangana">
+                            Telangana
+                        </option>
+
+                        <option value="Tripura">
+                            Tripura
+                        </option>
+
+                        <option value="Uttar Pradesh">
+                            Uttar Pradesh
+                        </option>
+
+                        <option value="Uttarakhand">
+                            Uttarakhand
+                        </option>
+
+                        <option value="West Bengal">
+                            West Bengal
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- CITY + PIN -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="city">
+                            City
                         </label>
 
                         <input
                             type="text"
-                            id="businessName"
-                            name="businessName"
-                            placeholder="Enter business / company name"
-                            autocomplete="organization"
+                            id="city"
+                            name="city"
+                            placeholder="Enter city"
+                            autocomplete="address-level2"
                             required>
 
                     </div>
 
 
-                    <!-- CONTACT PERSON -->
                     <div class="form-group">
 
-                        <label for="contactName">
-                            Contact Person
+                        <label for="pinCode">
+                            PIN Code
                         </label>
 
                         <input
                             type="text"
-                            id="contactName"
-                            name="contactName"
-                            placeholder="Enter contact person name"
-                            autocomplete="name"
+                            id="pinCode"
+                            name="pinCode"
+                            placeholder="Enter 6-digit PIN code"
+                            inputmode="numeric"
+                            autocomplete="postal-code"
+                            maxlength="6"
+                            pattern="[0-9]{6}"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,6)"
                             required>
 
                     </div>
 
+                </div>
 
-                    <!-- PHONE + EMAIL -->
-                    <div class="form-row">
 
-                        <div class="form-group">
+                <!-- REQUIREMENT -->
 
-                            <label for="phone">
-                                Phone Number
-                            </label>
+                <div class="form-group">
 
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                placeholder="Enter 10-digit mobile number"
-                                inputmode="numeric"
-                                autocomplete="tel"
-                                maxlength="10"
-                                pattern="[0-9]{10}"
-                                oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10)"
-                                required>
+                    <label for="message">
+                        Tell us about your requirement
+                    </label>
 
-                        </div>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Tell us about your business, service area, or how you would like to partner with ORACLIME"></textarea>
 
+                </div>
 
-                        <div class="form-group">
 
-                            <label for="email">
-                                Email
-                            </label>
+                <!-- SUBMIT BUTTON -->
 
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="Enter email address"
-                                autocomplete="email">
+                <button
+                    type="submit"
+                    class="partner-submit"
+                    id="partnerSubmitButton">
 
-                        </div>
+                    Submit Partnership Request
 
-                    </div>
+                </button>
 
 
-                    <!-- PARTNER TYPE -->
-                    <div class="form-group">
+                <!-- ERROR / PROCESS MESSAGE -->
 
-                        <label for="partnerType">
-                            What best describes you?
-                        </label>
+                <div
+                    id="submissionMessage"
+                    class="submission-message"
+                    style="display:none;">
 
-                        <select
-                            id="partnerType"
-                            name="partnerType"
-                            required>
+                </div>
 
-                            <option value="" selected disabled>
-                                Select your category
-                            </option>
+            </form>
 
-                            <option value="Technician">
-                                Technician
-                            </option>
+        </div>
 
-                            <option value="AC / HVAC Shop">
-                                AC / HVAC Shop
-                            </option>
+    </section>
 
-                            <option value="AC / HVAC Warehouse / Distributor">
-                                AC / HVAC Warehouse / Distributor
-                            </option>
+</main>
 
-                            <option value="Authorised Service Centre">
-                                Authorised Service Centre
-                            </option>
 
-                            <option value="Dealer">
-                                Dealer
-                            </option>
+<script>
 
-                            <option value="Contractor">
-                                Contractor
-                            </option>
+document.addEventListener("DOMContentLoaded", function () {
 
-                            <option value="Facility Management Company">
-                                Facility Management Company
-                            </option>
+    const form = document.getElementById("partnerForm");
 
-                            <option value="Other Business Partner">
-                                Other Business Partner
-                            </option>
+    const button = document.getElementById("partnerSubmitButton");
 
-                        </select>
+    const message = document.getElementById("submissionMessage");
 
-                    </div>
 
+    /*
+    ==================================================
+    GOOGLE APPS SCRIPT WEB APP URL
+    ==================================================
+    */
 
-                    <!-- STATE -->
-                    <div class="form-group">
+    const GOOGLE_SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbx9Jb9dyHGSFsB9gtzBwX5RXywCRGF09-REhj1dJ10k8njPVBQffpSRdqmpGUtXjfG/exec";
 
-                        <label for="state">
-                            State / Union Territory
-                        </label>
 
-                        <select
-                            id="state"
-                            name="state"
-                            required>
+    /*
+    ==================================================
+    PARTNER FORM SUBMIT
+    ==================================================
+    */
 
-                            <option value="" selected disabled>
-                                Select State / Union Territory
-                            </option>
+    form.addEventListener("submit", async function (event) {
 
+        event.preventDefault();
 
-                            <!-- UNION TERRITORIES FIRST -->
 
-                            <option value="Andaman and Nicobar Islands">
-                                Andaman and Nicobar Islands
-                            </option>
+        /*
+        Browser validation
+        */
 
-                            <option value="Chandigarh">
-                                Chandigarh
-                            </option>
+        if (!form.checkValidity()) {
 
-                            <option value="Dadra and Nagar Haveli and Daman and Diu">
-                                Dadra and Nagar Haveli and Daman and Diu
-                            </option>
+            form.reportValidity();
 
-                            <option value="Delhi">
-                                Delhi
-                            </option>
+            return;
 
-                            <option value="Jammu and Kashmir">
-                                Jammu and Kashmir
-                            </option>
+        }
 
-                            <option value="Ladakh">
-                                Ladakh
-                            </option>
 
-                            <option value="Lakshadweep">
-                                Lakshadweep
-                            </option>
+        /*
+        Disable button
+        */
 
-                            <option value="Puducherry">
-                                Puducherry
-                            </option>
+        button.disabled = true;
 
+        button.textContent = "Submitting...";
 
-                            <!-- STATES -->
 
-                            <option value="Andhra Pradesh">
-                                Andhra Pradesh
-                            </option>
+        message.style.display = "none";
 
-                            <option value="Arunachal Pradesh">
-                                Arunachal Pradesh
-                            </option>
+        message.textContent = "";
 
-                            <option value="Assam">
-                                Assam
-                            </option>
 
-                            <option value="Bihar">
-                                Bihar
-                            </option>
+        /*
+        Collect form data
+        */
 
-                            <option value="Chhattisgarh">
-                                Chhattisgarh
-                            </option>
+        const formData = {
 
-                            <option value="Goa">
-                                Goa
-                            </option>
+            formType: "partner",
 
-                            <option value="Gujarat">
-                                Gujarat
-                            </option>
+            businessName:
+                document.getElementById("businessName").value.trim(),
 
-                            <option value="Haryana">
-                                Haryana
-                            </option>
+            contactName:
+                document.getElementById("contactName").value.trim(),
 
-                            <option value="Himachal Pradesh">
-                                Himachal Pradesh
-                            </option>
+            phone:
+                document.getElementById("phone").value.trim(),
 
-                            <option value="Jharkhand">
-                                Jharkhand
-                            </option>
+            email:
+                document.getElementById("email").value.trim(),
 
-                            <option value="Karnataka">
-                                Karnataka
-                            </option>
+            partnerType:
+                document.getElementById("partnerType").value,
 
-                            <option value="Kerala">
-                                Kerala
-                            </option>
+            state:
+                document.getElementById("state").value,
 
-                            <option value="Madhya Pradesh">
-                                Madhya Pradesh
-                            </option>
+            city:
+                document.getElementById("city").value.trim(),
 
-                            <option value="Maharashtra">
-                                Maharashtra
-                            </option>
+            pinCode:
+                document.getElementById("pinCode").value.trim(),
 
-                            <option value="Manipur">
-                                Manipur
-                            </option>
+            message:
+                document.getElementById("message").value.trim()
 
-                            <option value="Meghalaya">
-                                Meghalaya
-                            </option>
+        };
 
-                            <option value="Mizoram">
-                                Mizoram
-                            </option>
 
-                            <option value="Nagaland">
-                                Nagaland
-                            </option>
+        try {
 
-                            <option value="Odisha">
-                                Odisha
-                            </option>
+            /*
+            Send data to Google Apps Script
+            */
 
-                            <option value="Punjab">
-                                Punjab
-                            </option>
+            const response = await fetch(
+                GOOGLE_SCRIPT_URL,
+                {
+                    method: "POST",
 
-                            <option value="Rajasthan">
-                                Rajasthan
-                            </option>
+                    headers: {
+                        "Content-Type":
+                            "text/plain;charset=utf-8"
+                    },
 
-                            <option value="Sikkim">
-                                Sikkim
-                            </option>
+                    body: JSON.stringify(formData)
+                }
+            );
 
-                            <option value="Tamil Nadu">
-                                Tamil Nadu
-                            </option>
 
-                            <option value="Telangana">
-                                Telangana
-                            </option>
+            const result = await response.json();
 
-                            <option value="Tripura">
-                                Tripura
-                            </option>
 
-                            <option value="Uttar Pradesh">
-                                Uttar Pradesh
-                            </option>
+            /*
+            ==========================================
+            SUCCESS
+            ==========================================
+            */
 
-                            <option value="Uttarakhand">
-                                Uttarakhand
-                            </option>
+            if (result.success && result.srn) {
 
-                            <option value="West Bengal">
-                                West Bengal
-                            </option>
+                /*
+                Redirect to success page
+                */
 
-                        </select>
+                window.location.href =
+                    "partner-success.html?srn=" +
+                    encodeURIComponent(result.srn);
 
-                    </div>
+                return;
 
+            }
 
-                    <!-- CITY + PIN CODE -->
-                    <div class="form-row">
 
-                        <div class="form-group">
+            /*
+            ==========================================
+            GOOGLE SCRIPT ERROR
+            ==========================================
+            */
 
-                            <label for="city">
-                                City
-                            </label>
+            throw new Error(
+                result.message ||
+                "Unable to submit request."
+            );
 
-                            <input
-                                type="text"
-                                id="city"
-                                name="city"
-                                placeholder="Enter city"
-                                autocomplete="address-level2"
-                                required>
 
-                        </div>
+        } catch (error) {
 
+            console.error(
+                "ORACLIME Partner Form Error:",
+                error
+            );
 
-                        <div class="form-group">
 
-                            <label for="pinCode">
-                                PIN Code
-                            </label>
+            message.style.display = "block";
 
-                            <input
-                                type="text"
-                                id="pinCode"
-                                name="pinCode"
-                                placeholder="Enter 6-digit PIN code"
-                                inputmode="numeric"
-                                autocomplete="postal-code"
-                                maxlength="6"
-                                pattern="[0-9]{6}"
-                                oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,6)"
-                                required>
+            message.textContent =
+                "Unable to submit your request right now. Please try again.";
 
-                        </div>
 
-                    </div>
+            button.disabled = false;
 
+            button.textContent =
+                "Submit Partnership Request";
 
-                    <!-- REQUIREMENT -->
-                    <div class="form-group">
+        }
 
-                        <label for="message">
-                            Tell us about your requirement
-                        </label>
+    });
 
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="5"
-                            placeholder="Tell us about your business, service area, or how you would like to partner with ORACLIME"></textarea>
+});
 
-                    </div>
-
-
-                    <!-- SUBMIT -->
-                    <button
-                        type="submit"
-                        class="partner-submit">
-
-                        Submit Request
-
-                    </button>
-
-
-                    <!-- SRN MESSAGE AREA -->
-                    <div
-                        id="submissionMessage"
-                        class="submission-message"
-                        style="display:none;">
-
-                    </div>
-
-                </form>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <script src="script.js"></script>
+</script>
 
 </body>
 </html>
