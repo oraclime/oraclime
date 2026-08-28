@@ -13,7 +13,370 @@
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="style.css">
+<style>
+/* =====================================================
+   ORACLIME PARTNER PAGE
+   ALL CSS IS INSIDE partner.html
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #172033;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e9ecef;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1180px;
+    margin: auto;
+    min-height: 74px;
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.brand-mark {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    background: #101820;
+    color: #ffffff;
+
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+
+    color: #526176;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #101820;
+}
+
+/* ================= PAGE ================= */
+
+.partner-page {
+    min-height: calc(100vh - 74px);
+    padding: 70px 20px 90px;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(0, 166, 125, .07),
+            transparent 35%
+        ),
+        #ffffff;
+}
+
+.partner-hero {
+    max-width: 780px;
+    margin: auto;
+}
+
+/* ================= HEADING ================= */
+
+.partner-heading {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    color: #0b9f7a;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+}
+
+.partner-heading h1 {
+    margin: 0;
+
+    font-size: clamp(42px, 7vw, 68px);
+    line-height: 1.02;
+    letter-spacing: -2.5px;
+
+    color: #111827;
+}
+
+.partner-heading h1 span {
+    color: #0b9f7a;
+}
+
+.partner-heading p {
+    max-width: 560px;
+    margin: 20px auto 0;
+
+    color: #667085;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ================= FORM CARD ================= */
+
+.partner-form-card {
+    background: #ffffff;
+
+    border: 1px solid #e3e7eb;
+    border-radius: 22px;
+
+    padding: 34px;
+
+    box-shadow:
+        0 18px 50px rgba(16, 24, 40, .08);
+}
+
+/* ================= FORM ================= */
+
+#partnerForm {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #172033;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    border: 1px solid #d8dee5;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    padding: 14px 14px;
+
+    color: #172033;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+.form-group input,
+.form-group select {
+    min-height: 48px;
+}
+
+.form-group textarea {
+    min-height: 125px;
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #98a2b3;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0b9f7a;
+
+    box-shadow:
+        0 0 0 3px rgba(11, 159, 122, .10);
+}
+
+/* ================= BUTTON ================= */
+
+.partner-submit {
+    width: 100%;
+
+    min-height: 50px;
+
+    border: 0;
+    border-radius: 9px;
+
+    background: #0b9f7a;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        background .2s ease,
+        transform .1s ease,
+        opacity .2s ease;
+}
+
+.partner-submit:hover {
+    background: #078866;
+}
+
+.partner-submit:active {
+    transform: translateY(1px);
+}
+
+.partner-submit:disabled {
+    opacity: .65;
+    cursor: not-allowed;
+}
+
+/* ================= MESSAGE ================= */
+
+.form-message {
+    display: none;
+
+    margin-top: 16px;
+    padding: 13px 15px;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-message.error {
+    display: block;
+
+    background: #fff1f1;
+    color: #b42318;
+
+    border: 1px solid #f2b8b5;
+}
+
+.form-message.success {
+    display: block;
+
+    background: #ecfdf3;
+    color: #027a48;
+
+    border: 1px solid #a6f4c5;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .nav-container {
+        min-height: 64px;
+        padding: 0 16px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .partner-page {
+        padding: 45px 14px 60px;
+    }
+
+    .partner-heading {
+        margin-bottom: 28px;
+    }
+
+    .partner-heading h1 {
+        font-size: 46px;
+        letter-spacing: -1.8px;
+    }
+
+    .partner-heading p {
+        font-size: 14px;
+    }
+
+    .partner-form-card {
+        padding: 22px 17px;
+        border-radius: 17px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-group {
+        margin-bottom: 19px;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 400px) {
+
+    .partner-heading h1 {
+        font-size: 40px;
+    }
+
+    .partner-form-card {
+        padding: 18px 14px;
+    }
+}
+</style>
 
     <style>
         /* =========================
@@ -614,6 +977,144 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </script>
 
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("partnerForm");
+    const button = document.getElementById("partnerSubmitButton");
+    const message = document.getElementById("submissionMessage");
+
+    const phone = document.getElementById("phone");
+    const pinCode = document.getElementById("pinCode");
+
+
+    /* =========================================
+       PHONE - ONLY 10 DIGITS
+    ========================================= */
+
+    phone.addEventListener("input", function () {
+
+        this.value = this.value
+            .replace(/\D/g, "")
+            .slice(0, 10);
+
+    });
+
+
+    /* =========================================
+       PIN - ONLY 6 DIGITS
+    ========================================= */
+
+    pinCode.addEventListener("input", function () {
+
+        this.value = this.value
+            .replace(/\D/g, "")
+            .slice(0, 6);
+
+    });
+
+
+    /* =========================================
+       ERROR FUNCTION
+    ========================================= */
+
+    function showError(text) {
+
+        message.textContent = text;
+
+        message.className =
+            "form-message error";
+
+        message.style.display = "block";
+
+    }
+
+
+    /* =========================================
+       SUBMIT
+    ========================================= */
+
+    form.addEventListener("submit", function (event) {
+
+        /*
+         * Browser validation
+         */
+
+        if (!form.checkValidity()) {
+
+            event.preventDefault();
+
+            form.reportValidity();
+
+            return;
+        }
+
+
+        /*
+         * PHONE VALIDATION
+         */
+
+        if (!/^[0-9]{10}$/.test(phone.value)) {
+
+            event.preventDefault();
+
+            showError(
+                "Please enter a valid 10-digit phone number."
+            );
+
+            phone.focus();
+
+            return;
+        }
+
+
+        /*
+         * PIN VALIDATION
+         */
+
+        if (!/^[0-9]{6}$/.test(pinCode.value)) {
+
+            event.preventDefault();
+
+            showError(
+                "Please enter a valid 6-digit PIN code."
+            );
+
+            pinCode.focus();
+
+            return;
+        }
+
+
+        /*
+         * SUBMIT BUTTON LOCK
+         */
+
+        button.disabled = true;
+
+        button.textContent = "Submitting...";
+
+        message.style.display = "none";
+
+
+        /*
+         * IMPORTANT:
+         *
+         * event.preventDefault() NAHI hai.
+         *
+         * Form normal POST ke through
+         * Google Apps Script ko jayega.
+         *
+         * Apps Script:
+         * 1. Data Sheet mein save karega
+         * 2. SRN generate karega
+         * 3. partner-success.html par redirect karega
+         */
+             });
+    });
+
+</script>
+    
 </body>
 
 </html>
