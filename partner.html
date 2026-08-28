@@ -2,1030 +2,935 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Partner with ORACLIME for reliable technical service coordination.">
-
-    <title>Partner With Us | ORACLIME</title>
-
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-<style>
-/* =====================================================
-   ORACLIME PARTNER PAGE
-   ALL CSS IS INSIDE partner.html
-===================================================== */
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #ffffff;
-    color: #172033;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* ================= NAVBAR ================= */
-
-.navbar {
-    width: 100%;
-    background: #ffffff;
-    border-bottom: 1px solid #e9ecef;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav-container {
-    max-width: 1180px;
-    margin: auto;
-    min-height: 74px;
-    padding: 0 24px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 11px;
-
-    font-size: 16px;
-    font-weight: 800;
-    letter-spacing: .5px;
-}
-
-.brand-mark {
-    width: 32px;
-    height: 32px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    border-radius: 8px;
-    background: #101820;
-    color: #ffffff;
-
-    font-weight: 800;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 34px;
-
-    color: #526176;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.nav-links a:hover {
-    color: #101820;
-}
-
-/* ================= PAGE ================= */
-
-.partner-page {
-    min-height: calc(100vh - 74px);
-    padding: 70px 20px 90px;
-
-    background:
-        radial-gradient(
-            circle at top left,
-            rgba(0, 166, 125, .07),
-            transparent 35%
-        ),
-        #ffffff;
-}
-
-.partner-hero {
-    max-width: 780px;
-    margin: auto;
-}
-
-/* ================= HEADING ================= */
-
-.partner-heading {
-    text-align: center;
-    margin-bottom: 38px;
-}
-
-.section-label {
-    display: inline-block;
-
-    margin-bottom: 16px;
-
-    color: #0b9f7a;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1.6px;
-}
-
-.partner-heading h1 {
-    margin: 0;
-
-    font-size: clamp(42px, 7vw, 68px);
-    line-height: 1.02;
-    letter-spacing: -2.5px;
-
-    color: #111827;
-}
-
-.partner-heading h1 span {
-    color: #0b9f7a;
-}
-
-.partner-heading p {
-    max-width: 560px;
-    margin: 20px auto 0;
-
-    color: #667085;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-/* ================= FORM CARD ================= */
-
-.partner-form-card {
-    background: #ffffff;
-
-    border: 1px solid #e3e7eb;
-    border-radius: 22px;
-
-    padding: 34px;
-
-    box-shadow:
-        0 18px 50px rgba(16, 24, 40, .08);
-}
-
-/* ================= FORM ================= */
-
-#partnerForm {
-    width: 100%;
-}
-
-.form-group {
-    margin-bottom: 22px;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-}
-
-.form-group label {
-    display: block;
-
-    margin-bottom: 9px;
-
-    color: #172033;
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-
-    border: 1px solid #d8dee5;
-    border-radius: 10px;
-
-    background: #ffffff;
-
-    padding: 14px 14px;
-
-    color: #172033;
-
-    font-family: inherit;
-    font-size: 14px;
-
-    outline: none;
-
-    transition:
-        border-color .2s ease,
-        box-shadow .2s ease;
-}
-
-.form-group input,
-.form-group select {
-    min-height: 48px;
-}
-
-.form-group textarea {
-    min-height: 125px;
-    resize: vertical;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: #98a2b3;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    border-color: #0b9f7a;
-
-    box-shadow:
-        0 0 0 3px rgba(11, 159, 122, .10);
-}
-
-/* ================= BUTTON ================= */
-
-.partner-submit {
-    width: 100%;
-
-    min-height: 50px;
-
-    border: 0;
-    border-radius: 9px;
-
-    background: #0b9f7a;
-    color: #ffffff;
-
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 800;
-
-    cursor: pointer;
-
-    transition:
-        background .2s ease,
-        transform .1s ease,
-        opacity .2s ease;
-}
-
-.partner-submit:hover {
-    background: #078866;
-}
-
-.partner-submit:active {
-    transform: translateY(1px);
-}
-
-.partner-submit:disabled {
-    opacity: .65;
-    cursor: not-allowed;
-}
-
-/* ================= MESSAGE ================= */
-
-.form-message {
-    display: none;
-
-    margin-top: 16px;
-    padding: 13px 15px;
-
-    border-radius: 9px;
-
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.form-message.error {
-    display: block;
-
-    background: #fff1f1;
-    color: #b42318;
-
-    border: 1px solid #f2b8b5;
-}
-
-.form-message.success {
-    display: block;
-
-    background: #ecfdf3;
-    color: #027a48;
-
-    border: 1px solid #a6f4c5;
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 700px) {
-
-    .nav-container {
-        min-height: 64px;
-        padding: 0 16px;
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Partner with ORACLIME for reliable technical service coordination."
+  >
+
+  <title>Partner With Us | ORACLIME</title>
+
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="favicon.ico"
+  >
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      background: #ffffff;
+      color: #102033;
+    }
+
+    /* ==============================
+       HEADER
+    ============================== */
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffff;
+      border-bottom: 1px solid #e7edf3;
+    }
+
+    .nav {
+      max-width: 1000px;
+      margin: auto;
+      min-height: 72px;
+      padding: 0 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      color: #0c1b2a;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: .3px;
+    }
+
+    .brand-icon {
+      width: 30px;
+      height: 30px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 8px;
+      background: #101d2a;
+      color: #ffffff;
+
+      font-size: 14px;
+      font-weight: 800;
     }
 
     .nav-links {
-        display: none;
+      display: flex;
+      align-items: center;
+      gap: 30px;
     }
 
-    .partner-page {
-        padding: 45px 14px 60px;
+    .nav-links a {
+      color: #263b50;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
     }
 
-    .partner-heading {
-        margin-bottom: 28px;
+    .nav-links a:hover {
+      color: #0aa47d;
     }
 
-    .partner-heading h1 {
-        font-size: 46px;
-        letter-spacing: -1.8px;
+    /* ==============================
+       PAGE
+    ============================== */
+
+    .page {
+      min-height: calc(100vh - 72px);
+      padding: 55px 20px 80px;
+
+      background:
+        radial-gradient(
+          circle at top left,
+          #f4fbf9 0,
+          #ffffff 42%
+        );
     }
 
-    .partner-heading p {
-        font-size: 14px;
+    .container {
+      width: 100%;
+      max-width: 670px;
+      margin: auto;
     }
 
-    .partner-form-card {
-        padding: 22px 17px;
-        border-radius: 17px;
+    .heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .heading h1 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      line-height: 1.15;
+      color: #0d1d2c;
+    }
+
+    .heading p {
+      margin: 0 auto;
+      max-width: 580px;
+      color: #66788a;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* ==============================
+       FORM CARD
+    ============================== */
+
+    .form-card {
+      background: #ffffff;
+      border: 1px solid #e0e7ed;
+      border-radius: 18px;
+
+      padding: 30px;
+
+      box-shadow:
+        0 15px 45px rgba(16, 32, 51, .08);
     }
 
     .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .field {
+      margin-bottom: 18px;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 8px;
+
+      color: #102033;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .required {
+      color: #e53935;
+    }
+
+    input,
+    select,
+    textarea {
+
+      width: 100%;
+
+      border: 1px solid #d4dee7;
+      border-radius: 9px;
+
+      background: #ffffff;
+      color: #142536;
+
+      font-family: inherit;
+      font-size: 14px;
+
+      outline: none;
+
+      transition:
+        border-color .2s,
+        box-shadow .2s;
+    }
+
+    input,
+    select {
+      height: 42px;
+      padding: 0 13px;
+    }
+
+    textarea {
+      min-height: 110px;
+      padding: 13px;
+      resize: vertical;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #9aaabd;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #0aa47d;
+
+      box-shadow:
+        0 0 0 3px rgba(10, 164, 125, .10);
+    }
+
+    /* ==============================
+       MESSAGE
+    ============================== */
+
+    .message {
+      display: none;
+
+      margin-bottom: 15px;
+      padding: 12px 14px;
+
+      border-radius: 8px;
+
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .message.error {
+      display: block;
+
+      background: #fff1f1;
+      border: 1px solid #ffcaca;
+      color: #a42626;
+    }
+
+    /* ==============================
+       BUTTON
+    ============================== */
+
+    .submit-btn {
+
+      width: 100%;
+      height: 46px;
+
+      border: 0;
+      border-radius: 9px;
+
+      background: #08a47d;
+      color: #ffffff;
+
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 800;
+
+      cursor: pointer;
+
+      transition:
+        background .2s,
+        transform .1s;
+    }
+
+    .submit-btn:hover {
+      background: #078d6c;
+    }
+
+    .submit-btn:active {
+      transform: translateY(1px);
+    }
+
+    .submit-btn:disabled {
+      opacity: .7;
+      cursor: not-allowed;
+    }
+
+    .small-note {
+      margin-top: 13px;
+
+      text-align: center;
+
+      color: #8291a0;
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    /* ==============================
+       HIDDEN IFRAME
+    ============================== */
+
+    #submitFrame {
+      display: none;
+      width: 0;
+      height: 0;
+      border: 0;
+    }
+
+    /* ==============================
+       MOBILE
+    ============================== */
+
+    @media (max-width: 700px) {
+
+      .nav {
+        min-height: 62px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .page {
+        padding:
+          35px 14px 55px;
+      }
+
+      .heading h1 {
+        font-size: 28px;
+      }
+
+      .heading p {
+        font-size: 14px;
+      }
+
+      .form-card {
+        padding: 21px 17px;
+        border-radius: 14px;
+      }
+
+      .form-row {
         grid-template-columns: 1fr;
         gap: 0;
+      }
+
     }
 
-    .form-group {
-        margin-bottom: 19px;
-    }
-}
+  </style>
 
-/* ================= SMALL MOBILE ================= */
-
-@media (max-width: 400px) {
-
-    .partner-heading h1 {
-        font-size: 40px;
-    }
-
-    .partner-form-card {
-        padding: 18px 14px;
-    }
-}
-</style>
-
-    <style>
-        /* =========================
-           FORM MESSAGE
-        ========================= */
-
-        .form-message {
-            display: none;
-            margin-top: 15px;
-            padding: 14px 16px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .form-message.success {
-            display: block;
-            background: #e8f8f2;
-            color: #087a58;
-            border: 1px solid #a7dfcd;
-        }
-
-        .form-message.error {
-            display: block;
-            background: #fff0f0;
-            color: #b42318;
-            border: 1px solid #f0b5b5;
-        }
-
-        .partner-submit:disabled {
-            opacity: 0.7;
-            cursor: not-allowed;
-        }
-
-        /* Hidden iframe used for Google Apps Script submission */
-        #formSubmitFrame {
-            display: none;
-        }
-    </style>
 </head>
 
 
 <body>
 
-<!-- ================================
-     NAVIGATION
-================================ -->
 
-<header class="navbar">
+  <!-- ==========================================
+       HEADER
+  =========================================== -->
 
-    <div class="nav-container">
+  <header class="header">
 
-        <a href="index.html" class="brand">
+    <nav class="nav">
 
-            <span class="brand-mark">
-                O
-            </span>
+      <a
+        href="index.html"
+        class="brand"
+      >
 
-            <span>
-                ORACLIME
-            </span>
+        <span class="brand-icon">
+          O
+        </span>
 
+        ORACLIME
+
+      </a>
+
+
+      <div class="nav-links">
+
+        <a href="index.html#services">
+          Services
         </a>
 
+        <a href="index.html#business">
+          For Business
+        </a>
 
-        <nav class="nav-links">
+        <a href="index.html#technicians">
+          Technicians
+        </a>
 
-            <a href="index.html">
-                Services
-            </a>
+        <a href="index.html#how-it-works">
+          How It Works
+        </a>
 
-            <a href="index.html">
-                For Business
-            </a>
+      </div>
 
-            <a href="index.html">
-                Technicians
-            </a>
+    </nav>
 
-            <a href="index.html">
-                How It Works
-            </a>
+  </header>
 
-        </nav>
+
+
+  <!-- ==========================================
+       PAGE
+  =========================================== -->
+
+  <main class="page">
+
+    <div class="container">
+
+
+      <div class="heading">
+
+        <h1>
+          Partner With ORACLIME
+        </h1>
+
+        <p>
+          Tell us about your business or service
+          requirements. Our team will contact you
+          shortly.
+        </p>
+
+      </div>
+
+
+
+      <!-- ========================================
+           FORM
+      ========================================= -->
+
+      <div class="form-card">
+
+        <form
+          id="partnerForm"
+
+          method="POST"
+
+          action="https://script.google.com/macros/s/AKfycbx9Jb9dyHGSFsB9gtzBxW5RXywCRGFO9-REhj1dJl0k8njPVBQffpSRdqmpmGUtxjfq/exec"
+
+          target="submitFrame"
+        >
+
+
+          <!-- SRN
+               JS ISKO GENERATE KAREGA
+          -->
+
+          <input
+            type="hidden"
+            name="srn"
+            id="srnField"
+          >
+
+
+
+          <!-- BUSINESS NAME -->
+
+          <div class="field">
+
+            <label for="businessName">
+              Business / Company Name
+              <span class="required">*</span>
+            </label>
+
+            <input
+              type="text"
+              id="businessName"
+              name="businessName"
+              placeholder="Enter business or company name"
+              required
+            >
+
+          </div>
+
+
+
+          <!-- CONTACT -->
+
+          <div class="field">
+
+            <label for="contactName">
+              Contact Person
+              <span class="required">*</span>
+            </label>
+
+            <input
+              type="text"
+              id="contactName"
+              name="contactName"
+              placeholder="Enter contact person name"
+              required
+            >
+
+          </div>
+
+
+
+          <!-- PHONE + EMAIL -->
+
+          <div class="form-row">
+
+
+            <div class="field">
+
+              <label for="phone">
+                Phone Number
+                <span class="required">*</span>
+              </label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter 10-digit mobile number"
+                inputmode="numeric"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required
+              >
+
+            </div>
+
+
+
+            <div class="field">
+
+              <label for="email">
+                Email
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email address"
+              >
+
+            </div>
+
+
+          </div>
+
+
+
+          <!-- PARTNER TYPE -->
+
+          <div class="field">
+
+            <label for="partnerType">
+              What best describes you?
+              <span class="required">*</span>
+            </label>
+
+            <select
+              id="partnerType"
+              name="partnerType"
+              required
+            >
+
+              <option value="">
+                Select your category
+              </option>
+
+              <option value="Technician">
+                Technician
+              </option>
+
+              <option value="AC New Shop / Warehouse">
+                AC New Shop / Warehouse
+              </option>
+
+              <option value="Authorised Service Centre">
+                Authorised Service Centre
+              </option>
+
+              <option value="Dealer / Distributor">
+                Dealer / Distributor
+              </option>
+
+              <option value="Contractor">
+                Contractor
+              </option>
+
+              <option value="Corporate / Business">
+                Corporate / Business
+              </option>
+
+              <option value="Other">
+                Other
+              </option>
+
+            </select>
+
+          </div>
+
+
+
+          <!-- STATE -->
+
+          <div class="field">
+
+            <label for="state">
+              State / Union Territory
+              <span class="required">*</span>
+            </label>
+
+            <select
+              id="state"
+              name="state"
+              required
+            >
+
+              <option value="">
+                Select State / Union Territory
+              </option>
+
+              <option>Andhra Pradesh</option>
+              <option>Arunachal Pradesh</option>
+              <option>Assam</option>
+              <option>Bihar</option>
+              <option>Chhattisgarh</option>
+              <option>Goa</option>
+              <option>Gujarat</option>
+              <option>Haryana</option>
+              <option>Himachal Pradesh</option>
+              <option>Jharkhand</option>
+              <option>Karnataka</option>
+              <option>Kerala</option>
+              <option>Madhya Pradesh</option>
+              <option>Maharashtra</option>
+              <option>Manipur</option>
+              <option>Meghalaya</option>
+              <option>Mizoram</option>
+              <option>Nagaland</option>
+              <option>Odisha</option>
+              <option>Punjab</option>
+              <option>Rajasthan</option>
+              <option>Sikkim</option>
+              <option>Tamil Nadu</option>
+              <option>Telangana</option>
+              <option>Tripura</option>
+              <option>Uttar Pradesh</option>
+              <option>Uttarakhand</option>
+              <option>West Bengal</option>
+              <option>Delhi</option>
+              <option>Jammu and Kashmir</option>
+              <option>Ladakh</option>
+              <option>Puducherry</option>
+              <option>Chandigarh</option>
+              <option>Andaman and Nicobar Islands</option>
+              <option>Dadra and Nagar Haveli and Daman and Diu</option>
+              <option>Lakshadweep</option>
+
+            </select>
+
+          </div>
+
+
+
+          <!-- CITY + PIN -->
+
+          <div class="form-row">
+
+
+            <div class="field">
+
+              <label for="city">
+                City
+                <span class="required">*</span>
+              </label>
+
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Enter city"
+                required
+              >
+
+            </div>
+
+
+
+            <div class="field">
+
+              <label for="pinCode">
+                PIN Code
+                <span class="required">*</span>
+              </label>
+
+              <input
+                type="text"
+                id="pinCode"
+                name="pinCode"
+                placeholder="Enter 6-digit PIN code"
+                inputmode="numeric"
+                pattern="[0-9]{6}"
+                maxlength="6"
+                required
+              >
+
+            </div>
+
+
+          </div>
+
+
+
+          <!-- REQUIREMENT -->
+
+          <div class="field">
+
+            <label for="requirement">
+              Tell us about your requirement
+              <span class="required">*</span>
+            </label>
+
+            <textarea
+              id="requirement"
+              name="requirement"
+              placeholder="Tell us about your business, service area, or how you would like to partner with ORACLIME"
+              required
+            ></textarea>
+
+          </div>
+
+
+
+          <!-- ERROR MESSAGE -->
+
+          <div
+            id="errorMessage"
+            class="message"
+          ></div>
+
+
+
+          <!-- SUBMIT -->
+
+          <button
+            type="submit"
+            id="submitBtn"
+            class="submit-btn"
+          >
+            Submit Partnership Request
+          </button>
+
+
+
+          <div class="small-note">
+
+            Your information will be securely
+            submitted to ORACLIME for partnership
+            coordination.
+
+          </div>
+
+
+        </form>
+
+      </div>
 
     </div>
 
-</header>
+  </main>
 
 
-<!-- ================================
-     PARTNER PAGE
-================================ -->
 
-<main class="partner-page">
+  <!-- ==========================================
+       GOOGLE APPS SCRIPT RESPONSE TARGET
+  =========================================== -->
 
-    <section class="partner-hero">
+  <iframe
+    name="submitFrame"
+    id="submitFrame"
+  ></iframe>
 
-        <div class="partner-heading">
 
-            <span class="section-label">
-                PARTNER WITH ORACLIME
-            </span>
 
-            <h1>
-                Let's work<br>
-                <span>together.</span>
-            </h1>
+  <!-- ==========================================
+       JAVASCRIPT
+  =========================================== -->
 
-            <p>
-                Tell us about yourself and how you would
-                like to work with ORACLIME.
-            </p>
+  <script>
 
-        </div>
+    "use strict";
 
 
-        <!-- ================================
-             PARTNER FORM
-        ================================= -->
+    /* =========================================
+       ELEMENTS
+    ========================================= */
 
-        <div class="partner-form-card">
+    const form =
+      document.getElementById("partnerForm");
 
-            <form
-                id="partnerForm"
-                method="POST"
-                action="https://script.google.com/macros/s/AKfycbx9Jb9dyHGSFsB9gtzBxW5RXywCRGF09-REhj1dJl0k8njPVBQffpSRdqmpmGUtXjfG/exec"
-                target="formSubmitFrame"
-            >
+    const srnField =
+      document.getElementById("srnField");
 
-                <!-- FORM TYPE -->
+    const submitBtn =
+      document.getElementById("submitBtn");
 
-                <input
-                    type="hidden"
-                    name="formType"
-                    value="partner"
-                >
+    const errorMessage =
+      document.getElementById("errorMessage");
 
+    const submitFrame =
+      document.getElementById("submitFrame");
 
-                <!-- BUSINESS NAME -->
 
-                <div class="form-group">
+    let isSubmitting = false;
 
-                    <label for="businessName">
-                        Business / Company Name
-                    </label>
 
-                    <input
-                        type="text"
-                        id="businessName"
-                        name="businessName"
-                        placeholder="Enter business / company name"
-                        autocomplete="organization"
-                        required
-                    >
+    /* =========================================
+       SRN GENERATOR
 
-                </div>
+       IMPORTANT:
+       SRN YAHIN GENERATE HOGA.
 
+       APPS SCRIPT MEIN NAHI.
+    ========================================= */
 
-                <!-- CONTACT PERSON -->
+    function generateSRN() {
 
-                <div class="form-group">
+      const now =
+        new Date();
 
-                    <label for="contactName">
-                        Contact Person
-                    </label>
 
-                    <input
-                        type="text"
-                        id="contactName"
-                        name="contactName"
-                        placeholder="Enter contact person name"
-                        autocomplete="name"
-                        required
-                    >
+      const year =
+        now.getFullYear();
 
-                </div>
 
+      const month =
+        String(
+          now.getMonth() + 1
+        ).padStart(2, "0");
 
-                <!-- PHONE + EMAIL -->
 
-                <div class="form-row">
+      const day =
+        String(
+          now.getDate()
+        ).padStart(2, "0");
 
-                    <div class="form-group">
 
-                        <label for="phone">
-                            Phone Number
-                        </label>
+      const random =
+        Math.floor(
+          100000 +
+          Math.random() * 900000
+        );
 
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="Enter 10-digit mobile number"
-                            inputmode="numeric"
-                            autocomplete="tel"
-                            maxlength="10"
-                            pattern="[0-9]{10}"
-                            required
-                        >
 
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="email">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter email address"
-                            autocomplete="email"
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <!-- PARTNER TYPE -->
-
-                <div class="form-group">
-
-                    <label for="partnerType">
-                        What best describes you?
-                    </label>
-
-                    <select
-                        id="partnerType"
-                        name="partnerType"
-                        required
-                    >
-
-                        <option value="" selected disabled>
-                            Select your category
-                        </option>
-
-                        <option value="Technician">
-                            Technician
-                        </option>
-
-                        <option value="AC / HVAC Shop">
-                            AC / HVAC Shop
-                        </option>
-
-                        <option value="AC / HVAC Warehouse / Distributor">
-                            AC / HVAC Warehouse / Distributor
-                        </option>
-
-                        <option value="Authorised Service Centre">
-                            Authorised Service Centre
-                        </option>
-
-                        <option value="Dealer">
-                            Dealer
-                        </option>
-
-                        <option value="Contractor">
-                            Contractor
-                        </option>
-
-                        <option value="Facility Management Company">
-                            Facility Management Company
-                        </option>
-
-                        <option value="Other Business Partner">
-                            Other Business Partner
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- STATE -->
-
-                <div class="form-group">
-
-                    <label for="state">
-                        State / Union Territory
-                    </label>
-
-                    <select
-                        id="state"
-                        name="state"
-                        required
-                    >
-
-                        <option value="" selected disabled>
-                            Select State / Union Territory
-                        </option>
-
-                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                        <option value="Andhra Pradesh">Andhra Pradesh</option>
-                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                        <option value="Assam">Assam</option>
-                        <option value="Bihar">Bihar</option>
-                        <option value="Chandigarh">Chandigarh</option>
-                        <option value="Chhattisgarh">Chhattisgarh</option>
-                        <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
-                        <option value="Delhi">Delhi</option>
-                        <option value="Goa">Goa</option>
-                        <option value="Gujarat">Gujarat</option>
-                        <option value="Haryana">Haryana</option>
-                        <option value="Himachal Pradesh">Himachal Pradesh</option>
-                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-                        <option value="Jharkhand">Jharkhand</option>
-                        <option value="Karnataka">Karnataka</option>
-                        <option value="Kerala">Kerala</option>
-                        <option value="Ladakh">Ladakh</option>
-                        <option value="Lakshadweep">Lakshadweep</option>
-                        <option value="Madhya Pradesh">Madhya Pradesh</option>
-                        <option value="Maharashtra">Maharashtra</option>
-                        <option value="Manipur">Manipur</option>
-                        <option value="Meghalaya">Meghalaya</option>
-                        <option value="Mizoram">Mizoram</option>
-                        <option value="Nagaland">Nagaland</option>
-                        <option value="Odisha">Odisha</option>
-                        <option value="Puducherry">Puducherry</option>
-                        <option value="Punjab">Punjab</option>
-                        <option value="Rajasthan">Rajasthan</option>
-                        <option value="Sikkim">Sikkim</option>
-                        <option value="Tamil Nadu">Tamil Nadu</option>
-                        <option value="Telangana">Telangana</option>
-                        <option value="Tripura">Tripura</option>
-                        <option value="Uttar Pradesh">Uttar Pradesh</option>
-                        <option value="Uttarakhand">Uttarakhand</option>
-                        <option value="West Bengal">West Bengal</option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- CITY + PIN -->
-
-                <div class="form-row">
-
-                    <div class="form-group">
-
-                        <label for="city">
-                            City
-                        </label>
-
-                        <input
-                            type="text"
-                            id="city"
-                            name="city"
-                            placeholder="Enter city"
-                            autocomplete="address-level2"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="pinCode">
-                            PIN Code
-                        </label>
-
-                        <input
-                            type="text"
-                            id="pinCode"
-                            name="pinCode"
-                            placeholder="Enter 6-digit PIN code"
-                            inputmode="numeric"
-                            autocomplete="postal-code"
-                            maxlength="6"
-                            pattern="[0-9]{6}"
-                            required
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <!-- REQUIREMENT -->
-
-                <div class="form-group">
-
-                    <label for="message">
-                        Tell us about your requirement
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        placeholder="Tell us about your business, service area, or how you would like to partner with ORACLIME"
-                    ></textarea>
-
-                </div>
-
-
-                <!-- MESSAGE -->
-
-                <div
-                    id="formMessage"
-                    class="form-message"
-                    role="alert"
-                ></div>
-
-
-                <!-- SUBMIT -->
-
-                <button
-                    type="submit"
-                    class="partner-submit"
-                    id="submitButton"
-                >
-                    Submit Partnership Request
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-</main>
-
-
-<!--
-    Hidden iframe:
-    Google Apps Script ka response isi mein open hoga.
-    Isse main page 405/redirect page par nahi jayega.
--->
-
-<iframe
-    name="formSubmitFrame"
-    id="formSubmitFrame"
-></iframe>
-
-
-<!-- ================================
-     JAVASCRIPT
-================================ -->
-
-<script>
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const form = document.getElementById("partnerForm");
-    const submitButton = document.getElementById("submitButton");
-    const formMessage = document.getElementById("formMessage");
-    const phoneInput = document.getElementById("phone");
-    const pinInput = document.getElementById("pinCode");
-    const iframe = document.getElementById("formSubmitFrame");
-
-
-    /* =========================
-       PHONE VALIDATION
-    ========================= */
-
-    phoneInput.addEventListener("input", function () {
-
-        this.value = this.value
-            .replace(/[^0-9]/g, "")
-            .slice(0, 10);
-
-    });
-
-
-    /* =========================
-       PIN VALIDATION
-    ========================= */
-
-    pinInput.addEventListener("input", function () {
-
-        this.value = this.value
-            .replace(/[^0-9]/g, "")
-            .slice(0, 6);
-
-    });
-
-
-    /* =========================
-       FORM SUBMIT
-    ========================= */
-
-    form.addEventListener("submit", function (event) {
-
-        event.preventDefault();
-
-
-        /* Browser validation */
-
-        if (!form.checkValidity()) {
-
-            form.reportValidity();
-
-            return;
-        }
-
-
-        /* Phone validation */
-
-        if (!/^[0-9]{10}$/.test(phoneInput.value)) {
-
-            showMessage(
-                "Please enter a valid 10-digit phone number.",
-                "error"
-            );
-
-            phoneInput.focus();
-
-            return;
-        }
-
-
-        /* PIN validation */
-
-        if (!/^[0-9]{6}$/.test(pinInput.value)) {
-
-            showMessage(
-                "Please enter a valid 6-digit PIN code.",
-                "error"
-            );
-
-            pinInput.focus();
-
-            return;
-        }
-
-
-        /* Hide old message */
-
-        formMessage.style.display = "none";
-        formMessage.className = "form-message";
-
-
-        /* Disable button */
-
-        submitButton.disabled = true;
-        submitButton.textContent = "Submitting...";
-
-
-        /*
-         * Submit normally to Google Apps Script
-         * but load response inside hidden iframe.
-         */
-
-        form.submit();
-
-
-        /*
-         * Google Apps Script usually responds quickly.
-         * Give it time to process the request.
-         */
-
-        setTimeout(function () {
-
-            showMessage(
-                "Partnership request submitted successfully. We will contact you soon.",
-                "success"
-            );
-
-
-            submitButton.disabled = false;
-            submitButton.textContent = "Submit Partnership Request";
-
-
-            form.reset();
-
-        }, 1800);
-
-    });
-
-
-    /* =========================
-       MESSAGE FUNCTION
-    ========================= */
-
-    function showMessage(message, type) {
-
-        formMessage.textContent = message;
-
-        formMessage.className =
-            "form-message " + type;
-
-        formMessage.style.display = "block";
-
-        formMessage.scrollIntoView({
-            behavior: "smooth",
-            block: "nearest"
-        });
+      return (
+        "PT-" +
+        year +
+        month +
+        day +
+        "-" +
+        random
+      );
 
     }
 
-});
 
-</script>
+    /* =========================================
+       PHONE VALIDATION
+    ========================================= */
 
- <script>
-document.addEventListener("DOMContentLoaded", function () {
+    function validatePhone() {
 
-    const form = document.getElementById("partnerForm");
-    const button = document.getElementById("partnerSubmitButton");
-    const message = document.getElementById("submissionMessage");
+      const phone =
+        document
+          .getElementById("phone")
+          .value
+          .trim();
 
-    const phone = document.getElementById("phone");
-    const pinCode = document.getElementById("pinCode");
+
+      return /^[0-9]{10}$/.test(phone);
+
+    }
 
 
     /* =========================================
-       PHONE - ONLY 10 DIGITS
+       PIN VALIDATION
     ========================================= */
 
-    phone.addEventListener("input", function () {
+    function validatePIN() {
 
-        this.value = this.value
-            .replace(/\D/g, "")
-            .slice(0, 10);
+      const pin =
+        document
+          .getElementById("pinCode")
+          .value
+          .trim();
 
-    });
+
+      return /^[0-9]{6}$/.test(pin);
+
+    }
 
 
     /* =========================================
-       PIN - ONLY 6 DIGITS
+       SHOW ERROR
     ========================================= */
 
-    pinCode.addEventListener("input", function () {
+    function showError(message) {
 
-        this.value = this.value
-            .replace(/\D/g, "")
-            .slice(0, 6);
+      errorMessage.textContent =
+        message;
 
-    });
+      errorMessage.className =
+        "message error";
 
-
-    /* =========================================
-       ERROR FUNCTION
-    ========================================= */
-
-    function showError(text) {
-
-        message.textContent = text;
-
-        message.className =
-            "form-message error";
-
-        message.style.display = "block";
+      errorMessage.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
 
     }
 
@@ -1034,87 +939,208 @@ document.addEventListener("DOMContentLoaded", function () {
        SUBMIT
     ========================================= */
 
-    form.addEventListener("submit", function (event) {
+    form.addEventListener(
+      "submit",
+      function(event) {
 
         /*
-         * Browser validation
-         */
-
-        if (!form.checkValidity()) {
-
-            event.preventDefault();
-
-            form.reportValidity();
-
-            return;
-        }
-
-
-        /*
-         * PHONE VALIDATION
-         */
-
-        if (!/^[0-9]{10}$/.test(phone.value)) {
-
-            event.preventDefault();
-
-            showError(
-                "Please enter a valid 10-digit phone number."
-            );
-
-            phone.focus();
-
-            return;
-        }
-
-
-        /*
-         * PIN VALIDATION
-         */
-
-        if (!/^[0-9]{6}$/.test(pinCode.value)) {
-
-            event.preventDefault();
-
-            showError(
-                "Please enter a valid 6-digit PIN code."
-            );
-
-            pinCode.focus();
-
-            return;
-        }
-
-
-        /*
-         * SUBMIT BUTTON LOCK
-         */
-
-        button.disabled = true;
-
-        button.textContent = "Submitting...";
-
-        message.style.display = "none";
-
-
-        /*
+         * Browser ko normal POST karne dena hai.
+         *
          * IMPORTANT:
-         *
-         * event.preventDefault() NAHI hai.
-         *
-         * Form normal POST ke through
-         * Google Apps Script ko jayega.
-         *
-         * Apps Script:
-         * 1. Data Sheet mein save karega
-         * 2. SRN generate karega
-         * 3. partner-success.html par redirect karega
+         * event.preventDefault() NAHI.
          */
-             });
-    });
 
-</script>
-    
+
+        if (isSubmitting) {
+
+          event.preventDefault();
+
+          return;
+
+        }
+
+
+        /* PHONE */
+
+        if (!validatePhone()) {
+
+          event.preventDefault();
+
+          showError(
+            "Please enter a valid 10-digit mobile number."
+          );
+
+          return;
+
+        }
+
+
+        /* PIN */
+
+        if (!validatePIN()) {
+
+          event.preventDefault();
+
+          showError(
+            "Please enter a valid 6-digit PIN code."
+          );
+
+          return;
+
+        }
+
+
+        /* =====================================
+           GENERATE SRN
+        ===================================== */
+
+        const srn =
+          generateSRN();
+
+
+        /*
+         * SRN hidden input mein.
+         */
+
+        srnField.value =
+          srn;
+
+
+        /*
+         * Success page ke fallback ke liye
+         * browser storage mein bhi save.
+         */
+
+        try {
+
+          sessionStorage.setItem(
+            "oraclime_partner_srn",
+            srn
+          );
+
+        } catch (e) {
+
+          console.warn(
+            "Session storage unavailable."
+          );
+
+        }
+
+
+        /* =====================================
+           LOCK FORM
+        ===================================== */
+
+        isSubmitting =
+          true;
+
+
+        submitBtn.disabled =
+          true;
+
+
+        submitBtn.textContent =
+          "Submitting...";
+
+
+        errorMessage.className =
+          "message";
+
+
+        /*
+         * YAHAN preventDefault NAHI HAI.
+         *
+         * Form normal POST karega:
+         *
+         * partner.html
+         *       ↓
+         * Google Apps Script
+         */
+
+
+      }
+    );
+
+
+    /* =========================================
+       APPS SCRIPT RESPONSE
+
+       Apps Script iframe mein response
+       load karega.
+
+       Uske baad success page.
+    ========================================= */
+
+    submitFrame.addEventListener(
+      "load",
+      function() {
+
+        if (!isSubmitting) {
+          return;
+        }
+
+
+        const srn =
+          srnField.value;
+
+
+        if (!srn) {
+          return;
+        }
+
+
+        /*
+         * FINAL REDIRECT
+         */
+
+        window.location.href =
+          "partner-success.html?srn=" +
+          encodeURIComponent(srn);
+
+      }
+    );
+
+
+    /* =========================================
+       ONLY NUMBERS - PHONE
+    ========================================= */
+
+    document
+      .getElementById("phone")
+      .addEventListener(
+        "input",
+        function() {
+
+          this.value =
+            this.value
+              .replace(/\D/g, "")
+              .slice(0, 10);
+
+        }
+      );
+
+
+    /* =========================================
+       ONLY NUMBERS - PIN
+    ========================================= */
+
+    document
+      .getElementById("pinCode")
+      .addEventListener(
+        "input",
+        function() {
+
+          this.value =
+            this.value
+              .replace(/\D/g, "")
+              .slice(0, 6);
+
+        }
+      );
+
+  </script>
+
+
 </body>
 
 </html>
