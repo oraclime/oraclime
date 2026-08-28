@@ -47,7 +47,10 @@
         <section class="partner-hero">
 
             <div class="partner-heading">
-                <span class="section-label">PARTNER WITH ORACLIME</span>
+
+                <span class="section-label">
+                    PARTNER WITH ORACLIME
+                </span>
 
                 <h1>
                     Let's work<br>
@@ -55,18 +58,21 @@
                 </h1>
 
                 <p>
-                    Tell us about your business and how you would
+                    Tell us about yourself and how you would
                     like to work with ORACLIME.
                 </p>
+
             </div>
 
 
-            <!-- FORM -->
+            <!-- PARTNER FORM -->
             <div class="partner-form-card">
 
                 <form id="partnerForm">
 
+                    <!-- BUSINESS / COMPANY NAME -->
                     <div class="form-group">
+
                         <label for="businessName">
                             Business / Company Name
                         </label>
@@ -75,12 +81,16 @@
                             type="text"
                             id="businessName"
                             name="businessName"
-                            placeholder="Enter business name"
+                            placeholder="Enter business / company name"
+                            autocomplete="organization"
                             required>
+
                     </div>
 
 
+                    <!-- CONTACT PERSON -->
                     <div class="form-group">
+
                         <label for="contactName">
                             Contact Person
                         </label>
@@ -90,13 +100,17 @@
                             id="contactName"
                             name="contactName"
                             placeholder="Enter contact person name"
+                            autocomplete="name"
                             required>
+
                     </div>
 
 
+                    <!-- PHONE + EMAIL -->
                     <div class="form-row">
 
                         <div class="form-group">
+
                             <label for="phone">
                                 Phone Number
                             </label>
@@ -105,12 +119,19 @@
                                 type="tel"
                                 id="phone"
                                 name="phone"
-                                placeholder="Enter phone number"
+                                placeholder="Enter 10-digit mobile number"
+                                inputmode="numeric"
+                                autocomplete="tel"
+                                maxlength="10"
+                                pattern="[0-9]{10}"
+                                oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10)"
                                 required>
+
                         </div>
 
 
                         <div class="form-group">
+
                             <label for="email">
                                 Email
                             </label>
@@ -119,27 +140,284 @@
                                 type="email"
                                 id="email"
                                 name="email"
-                                placeholder="Enter email address">
+                                placeholder="Enter email address"
+                                autocomplete="email">
+
                         </div>
 
                     </div>
 
 
+                    <!-- PARTNER TYPE -->
                     <div class="form-group">
-                        <label for="city">
-                            City
+
+                        <label for="partnerType">
+                            What best describes you?
                         </label>
 
-                        <input
-                            type="text"
-                            id="city"
-                            name="city"
-                            placeholder="Enter city"
+                        <select
+                            id="partnerType"
+                            name="partnerType"
                             required>
+
+                            <option value="" selected disabled>
+                                Select your category
+                            </option>
+
+                            <option value="Technician">
+                                Technician
+                            </option>
+
+                            <option value="AC / HVAC Shop">
+                                AC / HVAC Shop
+                            </option>
+
+                            <option value="AC / HVAC Warehouse / Distributor">
+                                AC / HVAC Warehouse / Distributor
+                            </option>
+
+                            <option value="Authorised Service Centre">
+                                Authorised Service Centre
+                            </option>
+
+                            <option value="Dealer">
+                                Dealer
+                            </option>
+
+                            <option value="Contractor">
+                                Contractor
+                            </option>
+
+                            <option value="Facility Management Company">
+                                Facility Management Company
+                            </option>
+
+                            <option value="Other Business Partner">
+                                Other Business Partner
+                            </option>
+
+                        </select>
+
                     </div>
 
 
+                    <!-- STATE -->
                     <div class="form-group">
+
+                        <label for="state">
+                            State / Union Territory
+                        </label>
+
+                        <select
+                            id="state"
+                            name="state"
+                            required>
+
+                            <option value="" selected disabled>
+                                Select State / Union Territory
+                            </option>
+
+
+                            <!-- UNION TERRITORIES FIRST -->
+
+                            <option value="Andaman and Nicobar Islands">
+                                Andaman and Nicobar Islands
+                            </option>
+
+                            <option value="Chandigarh">
+                                Chandigarh
+                            </option>
+
+                            <option value="Dadra and Nagar Haveli and Daman and Diu">
+                                Dadra and Nagar Haveli and Daman and Diu
+                            </option>
+
+                            <option value="Delhi">
+                                Delhi
+                            </option>
+
+                            <option value="Jammu and Kashmir">
+                                Jammu and Kashmir
+                            </option>
+
+                            <option value="Ladakh">
+                                Ladakh
+                            </option>
+
+                            <option value="Lakshadweep">
+                                Lakshadweep
+                            </option>
+
+                            <option value="Puducherry">
+                                Puducherry
+                            </option>
+
+
+                            <!-- STATES -->
+
+                            <option value="Andhra Pradesh">
+                                Andhra Pradesh
+                            </option>
+
+                            <option value="Arunachal Pradesh">
+                                Arunachal Pradesh
+                            </option>
+
+                            <option value="Assam">
+                                Assam
+                            </option>
+
+                            <option value="Bihar">
+                                Bihar
+                            </option>
+
+                            <option value="Chhattisgarh">
+                                Chhattisgarh
+                            </option>
+
+                            <option value="Goa">
+                                Goa
+                            </option>
+
+                            <option value="Gujarat">
+                                Gujarat
+                            </option>
+
+                            <option value="Haryana">
+                                Haryana
+                            </option>
+
+                            <option value="Himachal Pradesh">
+                                Himachal Pradesh
+                            </option>
+
+                            <option value="Jharkhand">
+                                Jharkhand
+                            </option>
+
+                            <option value="Karnataka">
+                                Karnataka
+                            </option>
+
+                            <option value="Kerala">
+                                Kerala
+                            </option>
+
+                            <option value="Madhya Pradesh">
+                                Madhya Pradesh
+                            </option>
+
+                            <option value="Maharashtra">
+                                Maharashtra
+                            </option>
+
+                            <option value="Manipur">
+                                Manipur
+                            </option>
+
+                            <option value="Meghalaya">
+                                Meghalaya
+                            </option>
+
+                            <option value="Mizoram">
+                                Mizoram
+                            </option>
+
+                            <option value="Nagaland">
+                                Nagaland
+                            </option>
+
+                            <option value="Odisha">
+                                Odisha
+                            </option>
+
+                            <option value="Punjab">
+                                Punjab
+                            </option>
+
+                            <option value="Rajasthan">
+                                Rajasthan
+                            </option>
+
+                            <option value="Sikkim">
+                                Sikkim
+                            </option>
+
+                            <option value="Tamil Nadu">
+                                Tamil Nadu
+                            </option>
+
+                            <option value="Telangana">
+                                Telangana
+                            </option>
+
+                            <option value="Tripura">
+                                Tripura
+                            </option>
+
+                            <option value="Uttar Pradesh">
+                                Uttar Pradesh
+                            </option>
+
+                            <option value="Uttarakhand">
+                                Uttarakhand
+                            </option>
+
+                            <option value="West Bengal">
+                                West Bengal
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- CITY + PIN CODE -->
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="Enter city"
+                                autocomplete="address-level2"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="pinCode">
+                                PIN Code
+                            </label>
+
+                            <input
+                                type="text"
+                                id="pinCode"
+                                name="pinCode"
+                                placeholder="Enter 6-digit PIN code"
+                                inputmode="numeric"
+                                autocomplete="postal-code"
+                                maxlength="6"
+                                pattern="[0-9]{6}"
+                                oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,6)"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- REQUIREMENT -->
+                    <div class="form-group">
+
                         <label for="message">
                             Tell us about your requirement
                         </label>
@@ -148,13 +426,28 @@
                             id="message"
                             name="message"
                             rows="5"
-                            placeholder="Tell us how you would like to partner with ORACLIME"></textarea>
+                            placeholder="Tell us about your business, service area, or how you would like to partner with ORACLIME"></textarea>
+
                     </div>
 
 
-                    <button type="submit" class="partner-submit">
+                    <!-- SUBMIT -->
+                    <button
+                        type="submit"
+                        class="partner-submit">
+
                         Submit Partnership Request
+
                     </button>
+
+
+                    <!-- SRN MESSAGE AREA -->
+                    <div
+                        id="submissionMessage"
+                        class="submission-message"
+                        style="display:none;">
+
+                    </div>
 
                 </form>
 
