@@ -20,26 +20,48 @@
           href="style.css">
 </head>
 
+
 <body>
+
+
+<!-- ================================
+     NAVIGATION
+================================ -->
 
 <header class="navbar">
 
     <div class="nav-container">
 
         <a href="index.html" class="brand">
-            <span class="brand-mark">O</span>
-            <span>ORACLIME</span>
+
+            <span class="brand-mark">
+                O
+            </span>
+
+            <span>
+                ORACLIME
+            </span>
+
         </a>
+
 
         <nav class="nav-links">
 
-            <a href="index.html">Services</a>
+            <a href="index.html">
+                Services
+            </a>
 
-            <a href="index.html">For Business</a>
+            <a href="index.html">
+                For Business
+            </a>
 
-            <a href="index.html">Technicians</a>
+            <a href="index.html">
+                Technicians
+            </a>
 
-            <a href="index.html">How It Works</a>
+            <a href="index.html">
+                How It Works
+            </a>
 
         </nav>
 
@@ -48,9 +70,15 @@
 </header>
 
 
+
+<!-- ================================
+     PARTNER PAGE
+================================ -->
+
 <main class="partner-page">
 
     <section class="partner-hero">
+
 
         <div class="partner-heading">
 
@@ -58,10 +86,12 @@
                 PARTNER WITH ORACLIME
             </span>
 
+
             <h1>
                 Let's work<br>
                 <span>together.</span>
             </h1>
+
 
             <p>
                 Tell us about yourself and how you would
@@ -71,9 +101,29 @@
         </div>
 
 
+
+        <!-- ================================
+             PARTNER FORM
+        ================================= -->
+
         <div class="partner-form-card">
 
-            <form id="partnerForm">
+            <form
+                id="partnerForm"
+                method="POST"
+                action="https://script.google.com/macros/s/AKfycbx9Jb9dyHGSFsB9gtzBxW5RXywCRGF09-REhj1dJ10k8njPVBQffpSRdqmpmGUtXjfG/exec"
+            >
+
+
+                <!-- FORM TYPE -->
+
+                <input
+                    type="hidden"
+                    name="formType"
+                    value="partner"
+                >
+
+
 
                 <!-- BUSINESS NAME -->
 
@@ -89,9 +139,11 @@
                         name="businessName"
                         placeholder="Enter business / company name"
                         autocomplete="organization"
-                        required>
+                        required
+                    >
 
                 </div>
+
 
 
                 <!-- CONTACT PERSON -->
@@ -108,14 +160,17 @@
                         name="contactName"
                         placeholder="Enter contact person name"
                         autocomplete="name"
-                        required>
+                        required
+                    >
 
                 </div>
+
 
 
                 <!-- PHONE + EMAIL -->
 
                 <div class="form-row">
+
 
                     <div class="form-group">
 
@@ -133,9 +188,11 @@
                             maxlength="10"
                             pattern="[0-9]{10}"
                             oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10)"
-                            required>
+                            required
+                        >
 
                     </div>
+
 
 
                     <div class="form-group">
@@ -149,11 +206,13 @@
                             id="email"
                             name="email"
                             placeholder="Enter email address"
-                            autocomplete="email">
+                            autocomplete="email"
+                        >
 
                     </div>
 
                 </div>
+
 
 
                 <!-- PARTNER TYPE -->
@@ -167,7 +226,8 @@
                     <select
                         id="partnerType"
                         name="partnerType"
-                        required>
+                        required
+                    >
 
                         <option value="" selected disabled>
                             Select your category
@@ -210,6 +270,7 @@
                 </div>
 
 
+
                 <!-- STATE -->
 
                 <div class="form-group">
@@ -221,7 +282,8 @@
                     <select
                         id="state"
                         name="state"
-                        required>
+                        required
+                    >
 
                         <option value="" selected disabled>
                             Select State / Union Territory
@@ -229,34 +291,6 @@
 
                         <option value="Andaman and Nicobar Islands">
                             Andaman and Nicobar Islands
-                        </option>
-
-                        <option value="Chandigarh">
-                            Chandigarh
-                        </option>
-
-                        <option value="Dadra and Nagar Haveli and Daman and Diu">
-                            Dadra and Nagar Haveli and Daman and Diu
-                        </option>
-
-                        <option value="Delhi">
-                            Delhi
-                        </option>
-
-                        <option value="Jammu and Kashmir">
-                            Jammu and Kashmir
-                        </option>
-
-                        <option value="Ladakh">
-                            Ladakh
-                        </option>
-
-                        <option value="Lakshadweep">
-                            Lakshadweep
-                        </option>
-
-                        <option value="Puducherry">
-                            Puducherry
                         </option>
 
                         <option value="Andhra Pradesh">
@@ -275,8 +309,20 @@
                             Bihar
                         </option>
 
+                        <option value="Chandigarh">
+                            Chandigarh
+                        </option>
+
                         <option value="Chhattisgarh">
                             Chhattisgarh
+                        </option>
+
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">
+                            Dadra and Nagar Haveli and Daman and Diu
+                        </option>
+
+                        <option value="Delhi">
+                            Delhi
                         </option>
 
                         <option value="Goa">
@@ -295,6 +341,10 @@
                             Himachal Pradesh
                         </option>
 
+                        <option value="Jammu and Kashmir">
+                            Jammu and Kashmir
+                        </option>
+
                         <option value="Jharkhand">
                             Jharkhand
                         </option>
@@ -305,6 +355,14 @@
 
                         <option value="Kerala">
                             Kerala
+                        </option>
+
+                        <option value="Ladakh">
+                            Ladakh
+                        </option>
+
+                        <option value="Lakshadweep">
+                            Lakshadweep
                         </option>
 
                         <option value="Madhya Pradesh">
@@ -333,6 +391,10 @@
 
                         <option value="Odisha">
                             Odisha
+                        </option>
+
+                        <option value="Puducherry">
+                            Puducherry
                         </option>
 
                         <option value="Punjab">
@@ -376,9 +438,11 @@
                 </div>
 
 
+
                 <!-- CITY + PIN -->
 
                 <div class="form-row">
+
 
                     <div class="form-group">
 
@@ -392,9 +456,11 @@
                             name="city"
                             placeholder="Enter city"
                             autocomplete="address-level2"
-                            required>
+                            required
+                        >
 
                     </div>
+
 
 
                     <div class="form-group">
@@ -413,11 +479,13 @@
                             maxlength="6"
                             pattern="[0-9]{6}"
                             oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,6)"
-                            required>
+                            required
+                        >
 
                     </div>
 
                 </div>
+
 
 
                 <!-- REQUIREMENT -->
@@ -432,31 +500,22 @@
                         id="message"
                         name="message"
                         rows="5"
-                        placeholder="Tell us about your business, service area, or how you would like to partner with ORACLIME"></textarea>
+                        placeholder="Tell us about your business, service area, or how you would like to partner with ORACLIME"
+                    ></textarea>
 
                 </div>
 
 
-                <!-- SUBMIT BUTTON -->
+
+                <!-- SUBMIT -->
 
                 <button
                     type="submit"
                     class="partner-submit"
-                    id="partnerSubmitButton">
-
+                >
                     Submit Partnership Request
-
                 </button>
 
-
-                <!-- ERROR / PROCESS MESSAGE -->
-
-                <div
-                    id="submissionMessage"
-                    class="submission-message"
-                    style="display:none;">
-
-                </div>
 
             </form>
 
@@ -467,186 +526,6 @@
 </main>
 
 
-<script>
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const form = document.getElementById("partnerForm");
-
-    const button = document.getElementById("partnerSubmitButton");
-
-    const message = document.getElementById("submissionMessage");
-
-
-    /*
-    ==================================================
-    GOOGLE APPS SCRIPT WEB APP URL
-    ==================================================
-    */
-
-    const GOOGLE_SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbx9Jb9dyHGSFsB9gtzBwX5RXywCRGF09-REhj1dJ10k8njPVBQffpSRdqmpGUtXjfG/exec";
-
-
-    /*
-    ==================================================
-    PARTNER FORM SUBMIT
-    ==================================================
-    */
-
-    form.addEventListener("submit", async function (event) {
-
-        event.preventDefault();
-
-
-        /*
-        Browser validation
-        */
-
-        if (!form.checkValidity()) {
-
-            form.reportValidity();
-
-            return;
-
-        }
-
-
-        /*
-        Disable button
-        */
-
-        button.disabled = true;
-
-        button.textContent = "Submitting...";
-
-
-        message.style.display = "none";
-
-        message.textContent = "";
-
-
-        /*
-        Collect form data
-        */
-
-        const formData = {
-
-            formType: "partner",
-
-            businessName:
-                document.getElementById("businessName").value.trim(),
-
-            contactName:
-                document.getElementById("contactName").value.trim(),
-
-            phone:
-                document.getElementById("phone").value.trim(),
-
-            email:
-                document.getElementById("email").value.trim(),
-
-            partnerType:
-                document.getElementById("partnerType").value,
-
-            state:
-                document.getElementById("state").value,
-
-            city:
-                document.getElementById("city").value.trim(),
-
-            pinCode:
-                document.getElementById("pinCode").value.trim(),
-
-            message:
-                document.getElementById("message").value.trim()
-
-        };
-
-
-        try {
-
-            /*
-            Send data to Google Apps Script
-            */
-
-            const response = await fetch(
-                GOOGLE_SCRIPT_URL,
-                {
-                    method: "POST",
-
-                    headers: {
-                        "Content-Type":
-                            "text/plain;charset=utf-8"
-                    },
-
-                    body: JSON.stringify(formData)
-                }
-            );
-
-
-            const result = await response.json();
-
-
-            /*
-            ==========================================
-            SUCCESS
-            ==========================================
-            */
-
-            if (result.success && result.srn) {
-
-                /*
-                Redirect to success page
-                */
-
-                window.location.href =
-                    "partner-success.html?srn=" +
-                    encodeURIComponent(result.srn);
-
-                return;
-
-            }
-
-
-            /*
-            ==========================================
-            GOOGLE SCRIPT ERROR
-            ==========================================
-            */
-
-            throw new Error(
-                result.message ||
-                "Unable to submit request."
-            );
-
-
-        } catch (error) {
-
-            console.error(
-                "ORACLIME Partner Form Error:",
-                error
-            );
-
-
-            message.style.display = "block";
-
-            message.textContent =
-                "Unable to submit your request right now. Please try again.";
-
-
-            button.disabled = false;
-
-            button.textContent =
-                "Submit Partnership Request";
-
-        }
-
-    });
-
-});
-
-</script>
-
 </body>
+
 </html>
