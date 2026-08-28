@@ -4,25 +4,59 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Partner with ORACLIME for reliable technical service coordination.">
+        content="Partner with ORACLIME for reliable technical service coordination.">
 
     <title>Partner With Us | ORACLIME</title>
 
-    <link rel="icon"
-          type="image/x-icon"
-          href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <link rel="stylesheet"
-          href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================
+           FORM MESSAGE
+        ========================= */
+
+        .form-message {
+            display: none;
+            margin-top: 15px;
+            padding: 14px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .form-message.success {
+            display: block;
+            background: #e8f8f2;
+            color: #087a58;
+            border: 1px solid #a7dfcd;
+        }
+
+        .form-message.error {
+            display: block;
+            background: #fff0f0;
+            color: #b42318;
+            border: 1px solid #f0b5b5;
+        }
+
+        .partner-submit:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        /* Hidden iframe used for Google Apps Script submission */
+        #formSubmitFrame {
+            display: none;
+        }
+    </style>
 </head>
 
 
 <body>
-
 
 <!-- ================================
      NAVIGATION
@@ -70,7 +104,6 @@
 </header>
 
 
-
 <!-- ================================
      PARTNER PAGE
 ================================ -->
@@ -79,19 +112,16 @@
 
     <section class="partner-hero">
 
-
         <div class="partner-heading">
 
             <span class="section-label">
                 PARTNER WITH ORACLIME
             </span>
 
-
             <h1>
                 Let's work<br>
                 <span>together.</span>
             </h1>
-
 
             <p>
                 Tell us about yourself and how you would
@@ -99,7 +129,6 @@
             </p>
 
         </div>
-
 
 
         <!-- ================================
@@ -111,9 +140,9 @@
             <form
                 id="partnerForm"
                 method="POST"
-              
+                action="https://script.google.com/macros/s/AKfycbx9Jb9dyHGSFsB9gtzBxW5RXywCRGF09-REhj1dJl0k8njPVBQffpSRdqmpmGUtXjfG/exec"
+                target="formSubmitFrame"
             >
-
 
                 <!-- FORM TYPE -->
 
@@ -122,7 +151,6 @@
                     name="formType"
                     value="partner"
                 >
-
 
 
                 <!-- BUSINESS NAME -->
@@ -145,7 +173,6 @@
                 </div>
 
 
-
                 <!-- CONTACT PERSON -->
 
                 <div class="form-group">
@@ -166,11 +193,9 @@
                 </div>
 
 
-
                 <!-- PHONE + EMAIL -->
 
                 <div class="form-row">
-
 
                     <div class="form-group">
 
@@ -187,12 +212,10 @@
                             autocomplete="tel"
                             maxlength="10"
                             pattern="[0-9]{10}"
-                            oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10)"
                             required
                         >
 
                     </div>
-
 
 
                     <div class="form-group">
@@ -212,7 +235,6 @@
                     </div>
 
                 </div>
-
 
 
                 <!-- PARTNER TYPE -->
@@ -270,7 +292,6 @@
                 </div>
 
 
-
                 <!-- STATE -->
 
                 <div class="form-group">
@@ -289,160 +310,51 @@
                             Select State / Union Territory
                         </option>
 
-                        <option value="Andaman and Nicobar Islands">
-                            Andaman and Nicobar Islands
-                        </option>
-
-                        <option value="Andhra Pradesh">
-                            Andhra Pradesh
-                        </option>
-
-                        <option value="Arunachal Pradesh">
-                            Arunachal Pradesh
-                        </option>
-
-                        <option value="Assam">
-                            Assam
-                        </option>
-
-                        <option value="Bihar">
-                            Bihar
-                        </option>
-
-                        <option value="Chandigarh">
-                            Chandigarh
-                        </option>
-
-                        <option value="Chhattisgarh">
-                            Chhattisgarh
-                        </option>
-
-                        <option value="Dadra and Nagar Haveli and Daman and Diu">
-                            Dadra and Nagar Haveli and Daman and Diu
-                        </option>
-
-                        <option value="Delhi">
-                            Delhi
-                        </option>
-
-                        <option value="Goa">
-                            Goa
-                        </option>
-
-                        <option value="Gujarat">
-                            Gujarat
-                        </option>
-
-                        <option value="Haryana">
-                            Haryana
-                        </option>
-
-                        <option value="Himachal Pradesh">
-                            Himachal Pradesh
-                        </option>
-
-                        <option value="Jammu and Kashmir">
-                            Jammu and Kashmir
-                        </option>
-
-                        <option value="Jharkhand">
-                            Jharkhand
-                        </option>
-
-                        <option value="Karnataka">
-                            Karnataka
-                        </option>
-
-                        <option value="Kerala">
-                            Kerala
-                        </option>
-
-                        <option value="Ladakh">
-                            Ladakh
-                        </option>
-
-                        <option value="Lakshadweep">
-                            Lakshadweep
-                        </option>
-
-                        <option value="Madhya Pradesh">
-                            Madhya Pradesh
-                        </option>
-
-                        <option value="Maharashtra">
-                            Maharashtra
-                        </option>
-
-                        <option value="Manipur">
-                            Manipur
-                        </option>
-
-                        <option value="Meghalaya">
-                            Meghalaya
-                        </option>
-
-                        <option value="Mizoram">
-                            Mizoram
-                        </option>
-
-                        <option value="Nagaland">
-                            Nagaland
-                        </option>
-
-                        <option value="Odisha">
-                            Odisha
-                        </option>
-
-                        <option value="Puducherry">
-                            Puducherry
-                        </option>
-
-                        <option value="Punjab">
-                            Punjab
-                        </option>
-
-                        <option value="Rajasthan">
-                            Rajasthan
-                        </option>
-
-                        <option value="Sikkim">
-                            Sikkim
-                        </option>
-
-                        <option value="Tamil Nadu">
-                            Tamil Nadu
-                        </option>
-
-                        <option value="Telangana">
-                            Telangana
-                        </option>
-
-                        <option value="Tripura">
-                            Tripura
-                        </option>
-
-                        <option value="Uttar Pradesh">
-                            Uttar Pradesh
-                        </option>
-
-                        <option value="Uttarakhand">
-                            Uttarakhand
-                        </option>
-
-                        <option value="West Bengal">
-                            West Bengal
-                        </option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
 
                     </select>
 
                 </div>
 
 
-
                 <!-- CITY + PIN -->
 
                 <div class="form-row">
-
 
                     <div class="form-group">
 
@@ -462,7 +374,6 @@
                     </div>
 
 
-
                     <div class="form-group">
 
                         <label for="pinCode">
@@ -478,14 +389,12 @@
                             autocomplete="postal-code"
                             maxlength="6"
                             pattern="[0-9]{6}"
-                            oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,6)"
                             required
                         >
 
                     </div>
 
                 </div>
-
 
 
                 <!-- REQUIREMENT -->
@@ -506,16 +415,24 @@
                 </div>
 
 
+                <!-- MESSAGE -->
+
+                <div
+                    id="formMessage"
+                    class="form-message"
+                    role="alert"
+                ></div>
+
 
                 <!-- SUBMIT -->
 
                 <button
                     type="submit"
                     class="partner-submit"
+                    id="submitButton"
                 >
                     Submit Partnership Request
                 </button>
-
 
             </form>
 
@@ -525,6 +442,177 @@
 
 </main>
 
+
+<!--
+    Hidden iframe:
+    Google Apps Script ka response isi mein open hoga.
+    Isse main page 405/redirect page par nahi jayega.
+-->
+
+<iframe
+    name="formSubmitFrame"
+    id="formSubmitFrame"
+></iframe>
+
+
+<!-- ================================
+     JAVASCRIPT
+================================ -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("partnerForm");
+    const submitButton = document.getElementById("submitButton");
+    const formMessage = document.getElementById("formMessage");
+    const phoneInput = document.getElementById("phone");
+    const pinInput = document.getElementById("pinCode");
+    const iframe = document.getElementById("formSubmitFrame");
+
+
+    /* =========================
+       PHONE VALIDATION
+    ========================= */
+
+    phoneInput.addEventListener("input", function () {
+
+        this.value = this.value
+            .replace(/[^0-9]/g, "")
+            .slice(0, 10);
+
+    });
+
+
+    /* =========================
+       PIN VALIDATION
+    ========================= */
+
+    pinInput.addEventListener("input", function () {
+
+        this.value = this.value
+            .replace(/[^0-9]/g, "")
+            .slice(0, 6);
+
+    });
+
+
+    /* =========================
+       FORM SUBMIT
+    ========================= */
+
+    form.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+
+        /* Browser validation */
+
+        if (!form.checkValidity()) {
+
+            form.reportValidity();
+
+            return;
+        }
+
+
+        /* Phone validation */
+
+        if (!/^[0-9]{10}$/.test(phoneInput.value)) {
+
+            showMessage(
+                "Please enter a valid 10-digit phone number.",
+                "error"
+            );
+
+            phoneInput.focus();
+
+            return;
+        }
+
+
+        /* PIN validation */
+
+        if (!/^[0-9]{6}$/.test(pinInput.value)) {
+
+            showMessage(
+                "Please enter a valid 6-digit PIN code.",
+                "error"
+            );
+
+            pinInput.focus();
+
+            return;
+        }
+
+
+        /* Hide old message */
+
+        formMessage.style.display = "none";
+        formMessage.className = "form-message";
+
+
+        /* Disable button */
+
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting...";
+
+
+        /*
+         * Submit normally to Google Apps Script
+         * but load response inside hidden iframe.
+         */
+
+        form.submit();
+
+
+        /*
+         * Google Apps Script usually responds quickly.
+         * Give it time to process the request.
+         */
+
+        setTimeout(function () {
+
+            showMessage(
+                "Partnership request submitted successfully. We will contact you soon.",
+                "success"
+            );
+
+
+            submitButton.disabled = false;
+            submitButton.textContent = "Submit Partnership Request";
+
+
+            form.reset();
+
+        }, 1800);
+
+    });
+
+
+    /* =========================
+       MESSAGE FUNCTION
+    ========================= */
+
+    function showMessage(message, type) {
+
+        formMessage.textContent = message;
+
+        formMessage.className =
+            "form-message " + type;
+
+        formMessage.style.display = "block";
+
+        formMessage.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
+        });
+
+    }
+
+});
+
+</script>
 
 </body>
 
